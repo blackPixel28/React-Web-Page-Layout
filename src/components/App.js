@@ -1,3 +1,5 @@
+import db from '../db/layout.json';
+
 import '../css/App.css'
 
 import Header from '../layout/Header';
@@ -7,7 +9,7 @@ import Footer from '../layout/Footer';
 export default function App() {
   return (
     <div className="app">
-      <Header />
+      <Header navDB={db.Nav} />
       <Main />
       <Footer />
     </div>

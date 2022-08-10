@@ -1,0 +1,38 @@
+{
+    "Nav": [
+        {
+            "text": "start",
+            "link": "/",
+            "icon": "startIco0"
+        },
+        {
+            "text": "link1",
+            "link": "/link1",
+            "icon": "linkIco1"
+        },
+        {
+            "text": "link2",
+            "link": "/link2",
+            "icon": "linkIco2"
+        },
+        {
+            "text": "link3",
+            "link": "/link3",
+            "icon": "linkIco3"
+        },
+        {
+            "text": "link4",
+            "link": "/link4",
+            "icon": "linkIco4"
+        }
+    ],
+    "Header": {
+        "text": "headerText"
+    },
+    "Main": {
+        "text": "MainText"
+    },
+    "Footer": {
+        "text": "footer"
+    }
+}
