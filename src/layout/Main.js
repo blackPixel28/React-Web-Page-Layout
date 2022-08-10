@@ -1,12 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import StartPage from '../pages/StartPage';
-import PageLink1 from '../pages/PageLink1';
+import PageLink from '../pages/PageLink';
 
 export default function Main() {
     return (
         <Routes>
             <Route path="/" element={<StartPage />} />
-            <Route path="link1" element={<PageLink1 />} />
+            <Route path="link1" element={<PageLink />} />
+            <Route path="link2" element={<PageLink />} />
+            <Route path="link3" element={<PageLink />} />
+            <Route path="link4" element={<PageLink />} />
         </Routes>
     )
 }
