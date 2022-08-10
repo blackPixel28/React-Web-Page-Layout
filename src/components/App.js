@@ -1,5 +1,4 @@
 import db from '../db/layout.json';
-
 import '../css/App.css'
 
 import Header from '../layout/Header';

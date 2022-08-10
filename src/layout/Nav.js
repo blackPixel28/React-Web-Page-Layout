@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Nav({ navDB }) {
     return (
         <nav className="app-nav">
@@ -16,7 +18,7 @@ function NavContener({ navDB }) {
 function NavLinks({ navDB }) {
     return (
         navDB.map((item, index) => (
-            <li key={`listItem:${index}`}><a key={`link-key:${index}`} href={navDB[index].link}>{navDB[index].text}</a></li>
+            <Link key={`link-key:${index}`} to={navDB[index].link}>{navDB[index].text}</Link>
         ))
     )
 }
