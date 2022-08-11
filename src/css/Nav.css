@@ -11,7 +11,7 @@ nav {
 .nav-li {
     display: block;
     flex-basis: 20%;
-    background-color: red;
+    background-color: black;
 }
 
 .nav-link {
@@ -20,5 +20,10 @@ nav {
     line-height: var(--navHeight);
     color: white;
     text-decoration: none;
-    font-size: 1.5vh
+    font-size: 1.75vh;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    background-color: #333;
 }

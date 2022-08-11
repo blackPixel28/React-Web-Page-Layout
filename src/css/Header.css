@@ -1,3 +1,19 @@
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     min-height: var(--headerHeight);
+    background-color: black;
+}
+
+.header-text-and-logo {
+    background-color: black;
+    min-height: var(--headTextAndLogo);
+}
+
+.header-text-and-logo h1 {
+    color: #eee;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: var(--headTextAndLogo);
 }

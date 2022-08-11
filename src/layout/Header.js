@@ -4,8 +4,16 @@ import '../css/Header.css';
 export default function Header({ navDB }) {
     return (
         <header className="app-header">
-            <h1>witaj; header</h1>
+            <HeaderTextAndLogo />
             <Nav navDB={navDB} />
         </header>
+    )
+}
+
+function HeaderTextAndLogo() {
+    return (
+        <div className='header-text-and-logo'>
+            <h1>witaj; header</h1>
+        </div>
     )
 }
