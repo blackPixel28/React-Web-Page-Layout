@@ -8,9 +8,9 @@ import Footer from '../layout/Footer';
 export default function App() {
   return (
     <div className="app">
-      <Header navDB={db.Nav} />
+      <Header navDB={db.Nav} text="header" />
       <Main />
-      <Footer />
+      <Footer text="footer" />
     </div>
   )
 }

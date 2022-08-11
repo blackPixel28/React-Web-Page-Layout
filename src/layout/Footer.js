@@ -1,9 +1,9 @@
 import '../css/Footer.css'
 
-export default function Footer() {
+export default function Footer({ text }) {
     return (
         <footer className="app-footer">
-            <h1>footer</h1>
+            <h1>{text}</h1>
         </footer>
     )
 }

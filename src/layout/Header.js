@@ -1,19 +1,19 @@
 import Nav from './Nav';
 import '../css/Header.css';
 
-export default function Header({ navDB }) {
+export default function Header({ navDB, text }) {
     return (
         <header className="app-header">
-            <HeaderTextAndLogo />
+            <HeaderTextAndLogo text={text} />
             <Nav navDB={navDB} />
         </header>
     )
 }
 
-function HeaderTextAndLogo() {
+function HeaderTextAndLogo({ text }) {
     return (
         <div className='header-text-and-logo'>
-            <h1>witaj; header</h1>
+            <h1>{text}</h1>
         </div>
     )
 }
