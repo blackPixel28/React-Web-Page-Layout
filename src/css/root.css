@@ -1,5 +1,6 @@
 :root {
     --headerHeight: 15vh;
     --footerHeight: 5vh;
+    --navHeight: 5vh;
     --mainHeight: calc(100vh - var(--headerHeight) - var(--footerHeight));
 }

@@ -5,7 +5,7 @@ import PageLink from '../pages/PageLink';
 
 export default function Main() {
     return (
-        <main>
+        <main className="app-main">
             <Routes>
                 <Route path="/" element={<StartPage />} />
                 <Route path="link1" element={<PageLink />} />
