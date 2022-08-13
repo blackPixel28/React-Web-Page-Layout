@@ -1,3 +1,4 @@
+import '../css/Page.css'
 export default function PageLink() {
     return (
         <section className="page-link">
