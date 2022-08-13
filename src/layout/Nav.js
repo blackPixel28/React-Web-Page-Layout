@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 import '../css/Nav.css';
 
@@ -24,6 +25,7 @@ function NavLinks({ navDB }) {
                     key={`link-key:${index}`}
                     to={navDB[index].link}
                     className="nav-link">
+                    <FontAwesomeIcon icon={navDB[index].icon} />
                     {navDB[index].text}
                 </Link>
             </li>

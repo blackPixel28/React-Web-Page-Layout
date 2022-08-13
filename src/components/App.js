@@ -1,3 +1,4 @@
+import '../components/FontAwesomeIcon'
 import db from '../db/layout.json';
 import '../css/App.css'
 
