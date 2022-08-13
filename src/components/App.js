@@ -1,4 +1,5 @@
-import '../components/FontAwesomeIcon'
+import { useState, useEffect } from 'react';
+import '../components/FontAwesomeIcon';
 import db from '../db/layout.json';
 import '../css/App.css'
 
@@ -7,6 +8,15 @@ import Main from '../layout/Main';
 import Footer from '../layout/Footer';
 
 export default function App() {
+  const [mainH, setMainH] = useState(0);
+  useEffect(() => {
+    handleMainHeight()
+    document.querySelector(':root').style.setProperty('--mainHeight', `${mainH}px`)
+  })
+
+  const handleMainHeight = () => {
+    setMainH(window.innerHeight - document.querySelector('header').offsetHeight - document.querySelector('footer').offsetHeight)
+  }
   return (
     <div className="app">
       <Header navDB={db.Nav} text="header" />

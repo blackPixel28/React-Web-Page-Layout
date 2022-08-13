@@ -23,12 +23,15 @@ function NavLinks({ navDB }) {
             <li
                 key={`list-key:${index}`}
                 className="nav-li">
+
                 <Link
                     key={`link-key:${index}`}
                     to={navDB[index].link}
                     className="nav-link">
                     <FontAwesomeIcon icon={navDB[index].icon} />
-                    {navDB[index].text}
+                    <p className='nav-text'>
+                        {navDB[index].text}
+                    </p>
                 </Link>
             </li>
         ))
