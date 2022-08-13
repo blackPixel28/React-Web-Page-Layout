@@ -19,7 +19,16 @@ function NavContener({ navDB }) {
 function NavLinks({ navDB }) {
     return (
         navDB.map((item, index) => (
-            <li className="nav-li"><Link key={`link-key:${index}`} to={navDB[index].link} className="nav-link">{navDB[index].text}</Link></li>
+            <li
+                key={`list-key:${index}`}
+                className="nav-li">
+                <Link
+                    key={`link-key:${index}`}
+                    to={navDB[index].link}
+                    className="nav-link">
+                    {navDB[index].text}
+                </Link>
+            </li>
         ))
     )
 }
