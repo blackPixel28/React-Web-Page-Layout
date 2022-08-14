@@ -9,19 +9,30 @@ nav {
 }
 
 .nav-li {
-    display: block;
-    flex-basis: 20%;
+    flex-basis: 18%;
     background-color: black;
 }
 
 .nav-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+    padding: 1vh 0;
     text-align: center;
-    line-height: var(--navHeight);
+    /* line-height: var(--navHeight); */
     color: white;
     text-decoration: none;
-    font-size: 1.75vh;
+    font-size: 2vh;
     text-transform: uppercase;
+}
+
+.nav-li svg {
+    color: white;
+    font-size: 2.4vh;
+}
+
+.nav-text {
+    flex-basis: 50%;
 }
 
 .nav-link:hover {

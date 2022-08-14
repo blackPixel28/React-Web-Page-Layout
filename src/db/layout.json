@@ -3,27 +3,27 @@
         {
             "text": "start",
             "link": "/",
-            "icon": "startIco0"
+            "icon": "fa-solid fa-house"
         },
         {
             "text": "link1",
             "link": "/link1",
-            "icon": "linkIco1"
+            "icon": "fa-solid fa-file"
         },
         {
             "text": "link2",
             "link": "/link2",
-            "icon": "linkIco2"
+            "icon": "fa-solid fa-file"
         },
         {
             "text": "link3",
             "link": "/link3",
-            "icon": "linkIco3"
+            "icon": "fa-solid fa-file"
         },
         {
-            "text": "link4",
-            "link": "/link4",
-            "icon": "linkIco4"
+            "text": "kontakt",
+            "link": "/contact",
+            "icon": "fa-solid fa-envelope"
         }
     ],
     "Header": {
