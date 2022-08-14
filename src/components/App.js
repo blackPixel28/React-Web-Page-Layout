@@ -13,24 +13,23 @@ export default function App() {
   const [mainH, setMainH] = useState(0);
 
   useEffect(() => {
-    handleSetUseState()
-    window.addEventListener('orientationchange', () => handleSetUseState())
-    handleSetMainHeight()
+    handleResizeWindow()
+    window.addEventListener('orientationchange', () => window.location.reload())
+    window.addEventListener('resize', () => handleResizeWindow())
   })
-  const handleSetUseState = () => {
+
+  const handleResizeWindow = () => {
     setHeaderH(document.querySelector('header').offsetHeight)
     setFooterH(document.querySelector('footer').offsetHeight)
-    setMainH(window.screen.height)
+    setMainH(window.innerHeight)
+    document.querySelector(':root').style.setProperty('--mainHeight', `${mainH - headerH - footerH}px`)
   }
 
-  const handleSetMainHeight = () => {
-    document.querySelector(':root').style.setProperty('--mainHeight', `${mainH - footerH - headerH}px`)
-  }
   return (
     <div className="app">
       <Header navDB={db.Nav} text="header" />
       <Main />
       <Footer text="footer" />
-    </div>
+    </div >
   )
 }
