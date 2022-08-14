@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import '../components/FontAwesomeIcon';
 import db from '../db/layout.json';
 import '../css/App.css'
+import '../css/media.css'
 
 import Header from '../layout/Header';
 import Main from '../layout/Main';

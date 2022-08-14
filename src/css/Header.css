@@ -6,9 +6,14 @@ header {
     background-color: black;
 }
 
+header a {
+    text-decoration: none;
+}
+
 .header-text-and-logo {
     background-color: black;
     min-height: var(--headTextAndLogo);
+    /* cursor: pointer; */
 }
 
 .header-text-and-logo h1 {
@@ -16,4 +21,8 @@ header {
     text-align: center;
     text-transform: uppercase;
     line-height: var(--headTextAndLogo);
+}
+
+.header-text-and-logo h1:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
