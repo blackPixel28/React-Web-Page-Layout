@@ -27,9 +27,9 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header navDB={db.Nav} text="header" />
+      <Header navData={db.Nav} text={db.Header.text} />
       <Main />
-      <Footer text="footer" />
+      <Footer text={db.Footer.text} />
     </div >
   )
 }

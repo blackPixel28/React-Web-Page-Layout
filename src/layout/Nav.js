@@ -2,35 +2,35 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 import '../css/Nav.css';
 
-export default function Nav({ navDB }) {
+export default function Nav({ navData }) {
     return (
         <nav className="app-nav">
-            <NavContener navDB={navDB} />
+            <NavContener navData={navData} />
         </nav>
     )
 }
 
-function NavContener({ navDB }) {
+function NavContener({ navData }) {
     return (
         <ul className="nav-ul">
-            <NavLinks navDB={navDB} />
+            <NavLinks navData={navData} />
         </ul>
     )
 }
-function NavLinks({ navDB }) {
+function NavLinks({ navData }) {
     return (
-        navDB.map((item, index) => (
+        navData.map((item, index) => (
             <li
                 key={`list-key:${index}`}
                 className="nav-li">
 
                 <Link
                     key={`link-key:${index}`}
-                    to={navDB[index].link}
+                    to={navData[index].link}
                     className="nav-link">
-                    <FontAwesomeIcon icon={navDB[index].icon} />
+                    <FontAwesomeIcon icon={navData[index].icon} />
                     <p className='nav-text'>
-                        {navDB[index].text}
+                        {navData[index].text}
                     </p>
                 </Link>
             </li>

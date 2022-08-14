@@ -1,11 +1,11 @@
 import Nav from './Nav';
 import '../css/Header.css';
 
-export default function Header({ navDB, text }) {
+export default function Header({ navData, text }) {
     return (
         <header className="app-header">
             <HeaderTextAndLogo text={text} />
-            <Nav navDB={navDB} />
+            <Nav navData={navData} />
         </header>
     )
 }
