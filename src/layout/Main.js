@@ -7,12 +7,43 @@ export default function Main() {
     return (
         <main className="app-main">
             <Routes>
-                <Route exact path="/" element={<StartPage />} />
-                <Route path="link1" element={<NavLink />} />
-                <Route path="link2" element={<NavLink />} />
-                <Route path="link3" element={<NavLink />} />
-                <Route path="contact" element={<Contact />} />
-                <Route path="*" element={<NoPage />} />
+                <Route
+                    exact path="/"
+                    element={<StartPage
+                        title='Home Page'
+                    />}
+                />
+                <Route
+                    path="link1"
+                    element={<NavLink
+                        title='Link1'
+                    />}
+                />
+                <Route
+                    path="link2"
+                    element={<NavLink
+                        title='Link2'
+                    />}
+                />
+                <Route
+                    path="link3"
+                    element={<NavLink
+                        title='Link3'
+                    />}
+                />
+                <Route
+                    path="contact"
+                    element={<Contact
+                        title='Kontakt'
+                    />}
+                />
+                <Route
+                    path="*"
+                    element={<NoPage
+                        title='Error 404'
+                        text='Brak strony'
+                    />}
+                />
             </Routes>
         </main>
     )
