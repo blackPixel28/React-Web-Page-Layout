@@ -1,13 +1,13 @@
-import '../css/Page.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function StartPage() {
+export default function NoPage() {
     return (
-        <section className="start-page">
+        <section className="no-page">
             <h1>
-                <FontAwesomeIcon icon={'fas-solid fa-home'} />
-                Start Page
+                <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" color='#fcad03' fade />
+                ERROR 404
             </h1>
+            <h3>no page - error 404</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cumque adipisci pariatur debitis sint optio, exercitationem quisquam ea beatae, soluta id totam eos quam quaerat saepe, iste earum dolore! Numquam.
             </p>

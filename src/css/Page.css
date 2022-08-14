@@ -1,5 +1,6 @@
 .start-page,
-.page-link,
-.no-page {
+.navLink,
+.no-page,
+.contact {
     padding: 1.75vh 5vw;
 }
