@@ -27,13 +27,13 @@ function NavLinks({ navData }) {
                 <Link
                     key={`link-key:${index}`}
                     to={navData[index].link}
-                    className="nav-link">
+                    className={index === 0 ? "nav-link first-link" : "nav-link"}>
                     <FontAwesomeIcon icon={navData[index].icon} />
                     <p className='nav-text'>
                         {navData[index].text}
                     </p>
                 </Link>
-            </li>
+            </li >
         ))
     )
 }

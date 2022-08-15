@@ -10,7 +10,7 @@ nav {
 
 .nav-li {
     flex-basis: 18%;
-    background-color: black;
+    background-color: #111;
 }
 
 .nav-link {
@@ -26,6 +26,14 @@ nav {
     text-transform: uppercase;
 }
 
+.first-link {
+    background-color: rgb(220, 20, 60) !important;
+}
+
+.first-link:focus {
+    background-color: rgb(143, 0, 29) !important;
+}
+
 .nav-li svg {
     color: white;
     font-size: 2.4vh;
@@ -36,5 +44,9 @@ nav {
 }
 
 .nav-link:hover {
+    background-color: #333;
+}
+
+.nav-link:focus {
     background-color: #333;
 }

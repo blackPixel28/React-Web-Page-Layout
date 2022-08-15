@@ -3,7 +3,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     min-height: var(--headerHeight);
-    background-color: black;
+    background-color: #111;
 }
 
 header a {
@@ -11,7 +11,7 @@ header a {
 }
 
 .header-text-and-logo {
-    background-color: black;
+    background-color: #111;
     min-height: var(--headTextAndLogo);
     /* cursor: pointer; */
 }

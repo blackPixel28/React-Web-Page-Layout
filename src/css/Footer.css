@@ -1,3 +1,10 @@
 footer {
     min-height: var(--footerHeight);
+    background-color: #ccc;
+    color: #111;
+    text-align: center;
+}
+
+footer p {
+    line-height: var(--footerHeight);
 }

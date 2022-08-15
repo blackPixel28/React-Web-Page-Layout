@@ -14,7 +14,6 @@ export default function Header({ navData, text }) {
 function HeaderTextAndLogo({ text }) {
     return (
         <div className='header-text-and-logo'>
-
             <Link
                 key='header-link-to-home'
                 to='/'
