@@ -19,16 +19,13 @@ export default function Footer({ text }) {
         const maxScroll = document.body.scrollHeight - window.scrollY - window.innerHeight;
         const opacity = Math.floor(((footerHeight * 100) / maxScroll) - 100);
 
-        // console.clear();
-        // console.log(maxScroll, opacity)
-
-        if (maxScroll <= (footerHeight + (footerHeight / 2))) {
+        if (maxScroll <= (footerHeight * 2)) {
             if (opacity >= 0) setArrowOpacity(opacity);
-            else if (opacity >= 100) setArrowOpacity(100);
+            else if (opacity > 99) setArrowOpacity(100);
             item.classList.add('active');
             item.classList.remove('inactive');
         }
-        else if (maxScroll >= (footerHeight + (footerHeight / 2))) {
+        else if (maxScroll >= (footerHeight * 2)) {
             item.classList.add('inactive');
             item.classList.remove('active');
         }
