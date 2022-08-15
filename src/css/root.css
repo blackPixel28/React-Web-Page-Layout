@@ -4,4 +4,5 @@
     --headTextAndLogo: 10vh;
     --headerHeight: calc(var(--navHeight) + var(--headTextAndLogo));
     --mainHeight: calc(100vh - var(--headerHeight) - var(--footerHeight));
+    --arrowUpOpacity: 0;
 }
