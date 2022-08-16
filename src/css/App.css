@@ -6,11 +6,9 @@
 }
 
 .active {
-  /* display: block; */
-  visibility: visible;
+  display: block !important;
 }
 
 .inactive {
-  /* display: none; */
-  visibility: hidden;
+  display: hidden !important;
 }

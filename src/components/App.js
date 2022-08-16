@@ -20,7 +20,6 @@ export default function App() {
   })
 
   const handleResizeWindow = () => {
-    console.log(mainH - headerH - footerH);
     setHeaderH(document.querySelector('header').offsetHeight)
     setFooterH(document.querySelector('footer').offsetHeight)
     setMainH(window.innerHeight)

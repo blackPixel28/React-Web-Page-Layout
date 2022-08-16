@@ -9,7 +9,6 @@ export default function Footer({ text }) {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             handleActive(document.querySelector('.footer-arrowUp'))
-            // setCssArrowOpacity()
             setCssRootValue('--arrowUpOpacity', arrowOpacity, '%')
         })
     })
@@ -23,19 +22,18 @@ export default function Footer({ text }) {
             if (opacity >= 0) setArrowOpacity(opacity);
             else if (opacity > 99) setArrowOpacity(100);
             item.classList.add('active');
-            item.classList.remove('inactive');
         }
         else if (maxScroll >= (footerHeight * 2)) {
-            item.classList.add('inactive');
             item.classList.remove('active');
         }
     }
+
     return (
         <footer className="app-footer">
             <div className='footer-text'>
                 <p>{text}</p>
             </div>
-            <FontAwesomeIcon className='footer-arrowUp inactive' icon="fa-solid fa-circle-arrow-up" onClick={ArrowUp} />
+            <FontAwesomeIcon className='footer-arrowUp' icon="fa-solid fa-circle-arrow-up" onClick={ArrowUp} />
         </footer>
     )
 }

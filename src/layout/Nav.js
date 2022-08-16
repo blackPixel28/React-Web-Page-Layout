@@ -18,6 +18,13 @@ function NavContener({ navData }) {
     )
 }
 function NavLinks({ navData }) {
+
+    const handleClickInactiveArrowUp = () => {
+        const footerArrowUp = document.querySelector('.footer-arrowUp');
+        if (footerArrowUp.classList.contains) {
+            footerArrowUp.classList.remove('active');
+        }
+    }
     return (
         navData.map((item, index) => (
             <li
@@ -27,7 +34,9 @@ function NavLinks({ navData }) {
                 <Link
                     key={`link-key:${index}`}
                     to={navData[index].link}
-                    className={index === 0 ? "nav-link first-link" : "nav-link"}>
+                    className={index === 0 ? "nav-link first-link" : "nav-link"}
+                    onClick={handleClickInactiveArrowUp}
+                >
                     <FontAwesomeIcon icon={navData[index].icon} />
                     <p className='nav-text'>
                         {navData[index].text}
