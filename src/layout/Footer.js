@@ -18,12 +18,12 @@ export default function Footer({ text }) {
         const maxScroll = document.body.scrollHeight - window.scrollY - window.innerHeight;
         const opacity = Math.floor(((footerHeight * 100) / maxScroll) - 100);
 
-        if (maxScroll <= (footerHeight * 2)) {
+        if (maxScroll <= footerHeight) {
             if (opacity >= 0) setArrowOpacity(opacity);
             else if (opacity > 99) setArrowOpacity(100);
             item.classList.add('active');
         }
-        else if (maxScroll >= (footerHeight * 2)) {
+        else if (maxScroll >= footerHeight) {
             item.classList.remove('active');
         }
     }
