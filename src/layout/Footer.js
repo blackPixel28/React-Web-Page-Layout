@@ -34,8 +34,6 @@ export default function Footer({ text }) {
         <footer className="app-footer">
             <div className='footer-text'>
                 <p>{text}</p>
-                <p>{text}</p>
-                <p>{text}</p>
             </div>
             <FontAwesomeIcon className='footer-arrowUp inactive' icon="fa-solid fa-circle-arrow-up" onClick={ArrowUp} />
         </footer>
