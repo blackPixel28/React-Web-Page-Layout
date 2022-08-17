@@ -1,8 +1,40 @@
 :root {
-    --footerHeight: 5vh;
-    --navHeight: 5vh;
-    --headTextAndLogo: 10vh;
+    /* Body */
+    --bodyBackgroundColor: #f0f0f0;
+
+    /* App */
+    --appPageBackgroundColor: #fff;
+    --appFontSize: 2vh;
+    --maxWidth: 1280px;
+
+    /* Header */
+    --headerBackgroundColor: black;
+    --TextAndLogoBackgroundColor: black;
+    --headerTextAndLogo: 12vh;
+    --headerTextColor: #eee;
     --headerHeight: calc(var(--navHeight) + var(--headTextAndLogo));
+
+    /* Nav */
+    --navButtonNumber: 5;
+    --navHeight: 5vh;
+    --navTextColor: white;
+    --navFontSize: 2vh;
+    --navFirstButtonBackgroundColor: rgb(220, 20, 60);
+    --navFirstButtonBackgroundColorHover: rgb(177, 10, 43);
+    --navFirstButtonBackgroundColorFocus: rgb(143, 0, 29);
+    --navButtonBackgroundColor: #111;
+    --navButtonRadius: 0;
+
+    /* Nav Icon */
+    --navIconSize: 2.4vh;
+    --navIconColor: white;
+
+    /* Main */
     --mainHeight: 0;
+
+    /* Footer */
+    --footerHeight: 5vh;
+    --arrowUpSize: 5vh;
+    --arrowUpColor: crimson;
     --arrowUpOpacity: 0;
 }

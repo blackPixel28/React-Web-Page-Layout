@@ -3,7 +3,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     min-height: var(--headerHeight);
-    background-color: #111;
+    background-color: var(--headerBackgroundColor);
 }
 
 header a {
@@ -11,16 +11,16 @@ header a {
 }
 
 .header-text-and-logo {
-    background-color: #111;
+    background-color: var(--TextAndLogoBackgroundColor);
     min-height: var(--headTextAndLogo);
     /* cursor: pointer; */
 }
 
 .header-text-and-logo h1 {
-    color: #eee;
+    color: var(--headerTextColor);
     text-align: center;
     text-transform: uppercase;
-    line-height: var(--headTextAndLogo);
+    line-height: var(--headerTextAndLogo);
 }
 
 .header-text-and-logo h1:hover {
