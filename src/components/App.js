@@ -13,6 +13,7 @@ export default function App() {
   const [navH, setNavH] = useState(0);
   const [headerH, setHeaderH] = useState(0);
   const [footerH, setFooterH] = useState(0);
+  const [windowH, setWindowH] = useState(0);
   const [mainH, setMainH] = useState(0);
 
   useEffect(() => {
@@ -23,11 +24,15 @@ export default function App() {
   })
 
   const handleResizeWindow = () => {
+    if (document.querySelector('.app').offsetHeight < window.innerHeight) document.querySelector(':root').style.setProperty('--mainHeight', `${windowH - headerH - footerH - navH - 1}px`);
+
     setHeaderH(document.querySelector('header').offsetHeight)
     setNavH(document.querySelector('nav').offsetHeight);
     setFooterH(document.querySelector('footer').offsetHeight)
-    setMainH(window.innerHeight)
-    document.querySelector(':root').style.setProperty('--mainHeight', `${mainH - headerH - footerH - navH - 1}px`)
+    setWindowH(window.innerHeight);
+    setMainH(windowH - (headerH + footerH + navH) - 1);
+
+    document.querySelector(':root').style.setProperty('--mainHeight', `${mainH}px`)
   }
 
   const handleNavOffsetTop = () => {
