@@ -1,0 +1,5 @@
+.app-topBar {
+    background-color: lime !important;
+    min-width: 100%;
+    min-height: 5vh;
+}
