@@ -1,5 +1,32 @@
 .app-topBar {
-    background-color: lime !important;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--topBarBackgroundColor);
+    color: var(--topBarColor);
     min-width: 100%;
-    min-height: 5vh;
+    min-height: var(--topBarHeight);
+}
+
+.app-topBar p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    padding: 1vh 3vw;
+}
+
+.topBar-text {
+    text-align: left;
+    font-weight: 700;
+    flex-grow: 2;
+}
+
+.topBar-date-time {
+    flex-grow: 1;
+}
+
+.app-topBar span {
+    display: block;
+    flex-basis: 100%;
 }

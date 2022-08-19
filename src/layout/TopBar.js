@@ -1,6 +1,6 @@
 import '../css/TopBar.css';
 import { useState, useEffect } from 'react';
-export default function TopBar({ text }) {
+export default function TopBar({ text, dataTxt, timeTxt }) {
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
@@ -25,15 +25,17 @@ export default function TopBar({ text }) {
 
     return (
         <section className="app-topBar">
-            <p>
+            <p className='topBar-text'>
                 <span>
-                    {` ${text}, `}
+                    {`${text}`}
                 </span>
+            </p>
+            <p className='topBar-date-time'>
                 <span className='topBar-date'>
-                    {`Data: ${handleDate()}, `}
+                    {`${dataTxt}${handleDate()}`}
                 </span>
                 <span className='topBar-time'>
-                    {`Godzina: ${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`}
+                    {`${timeTxt}${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`}
                 </span>
             </p>
         </section>

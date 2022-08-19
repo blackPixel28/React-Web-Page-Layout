@@ -1,3 +1,4 @@
+import ArrowUp from '../components/ArrowUp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 import '../css/Nav.css';
@@ -20,6 +21,7 @@ function NavContener({ navData }) {
 function NavLinks({ navData }) {
 
     const handleClickInactiveArrowUp = () => {
+        ArrowUp();
         const footerArrowUp = document.querySelector('.footer-arrowUp');
         if (footerArrowUp.classList.contains) {
             footerArrowUp.classList.remove('active');

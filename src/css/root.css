@@ -7,16 +7,22 @@
     --appFontSize: 2vh;
     --maxWidth: 1280px;
 
+    /* Top-Bar */
+    --topBarHeight: 5vh;
+    --topBarBackgroundColor: rgb(105, 0, 21);
+    --topBarColor: rgb(252, 185, 199);
+
     /* Header */
     --headerBackgroundColor: black;
     --TextAndLogoBackgroundColor: black;
-    --headerTextAndLogo: 12vh;
+    --headerTextAndLogo: 15vh;
     --headerTextColor: #eee;
-    --headerHeight: calc(var(--navHeight) + var(--headTextAndLogo));
+    --headerHeight: calc(var(--headTextAndLogo) + var(--topBarHeight));
 
     /* Nav */
     --navButtonNumber: 5;
     --navHeight: 5vh;
+    --navBackgroundColor: black;
     --navTextColor: white;
     --navFontSize: 2vh;
     --navFirstButtonBackgroundColor: rgb(220, 20, 60);

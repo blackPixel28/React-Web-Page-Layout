@@ -1,5 +1,10 @@
 nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     min-height: var(--navHeight);
+    z-index: 100;
+    background-color: var(--navBackgroundColor);
 }
 
 .nav-ul {
