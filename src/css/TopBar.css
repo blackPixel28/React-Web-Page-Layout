@@ -5,6 +5,7 @@
     color: var(--topBarColor);
     min-width: 100%;
     min-height: var(--topBarHeight);
+    font-size: var(--topBarFontSize);
 }
 
 .app-topBar p {
@@ -13,7 +14,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-basis: 20%;
-    padding: 1vh 3vw;
+    padding: 0.5vh 3vw;
 }
 
 .topBar-text {

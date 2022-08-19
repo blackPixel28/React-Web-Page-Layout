@@ -8,9 +8,10 @@
     --maxWidth: 1280px;
 
     /* Top-Bar */
-    --topBarHeight: 5vh;
+    --topBarHeight: 3vh;
     --topBarBackgroundColor: rgb(105, 0, 21);
     --topBarColor: rgb(252, 185, 199);
+    --topBarFontSize: 1.7vh;
 
     /* Header */
     --headerBackgroundColor: black;

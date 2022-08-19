@@ -5,6 +5,7 @@ nav {
     min-height: var(--navHeight);
     z-index: 100;
     background-color: var(--navBackgroundColor);
+    transition: 0.3s;
 }
 
 .nav-ul {

@@ -19,6 +19,7 @@ export default function App() {
     handleResizeWindow()
     window.addEventListener('orientationchange', () => window.location.reload())
     window.addEventListener('resize', () => handleResizeWindow())
+    window.addEventListener('scroll', handleNavOffsetTop)
   })
 
   const handleResizeWindow = () => {
@@ -27,6 +28,13 @@ export default function App() {
     setFooterH(document.querySelector('footer').offsetHeight)
     setMainH(window.innerHeight)
     document.querySelector(':root').style.setProperty('--mainHeight', `${mainH - headerH - footerH - navH - 1}px`)
+  }
+
+  const handleNavOffsetTop = () => {
+    const nav = document.querySelector('nav');
+    nav.offsetTop > headerH ?
+      nav.classList.add('stick') :
+      nav.classList.remove('stick');
   }
 
   return (
