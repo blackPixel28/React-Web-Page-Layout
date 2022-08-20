@@ -21,7 +21,7 @@
     --headerHeight: calc(var(--headTextAndLogo) + var(--topBarHeight));
 
     /* Nav */
-    --navButtonNumber: 5;
+    --navButtonNumber: 6;
     --navHeight: 5vh;
     --navBackgroundColor: black;
     --navTextColor: white;

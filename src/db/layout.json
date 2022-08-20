@@ -21,6 +21,11 @@
             "icon": "fa-solid fa-file"
         },
         {
+            "text": "link4",
+            "link": "/link4",
+            "icon": "fa-solid fa-file"
+        },
+        {
             "text": "kontakt",
             "link": "/contact",
             "icon": "fa-solid fa-envelope"
@@ -30,6 +35,6 @@
         "text": "Header"
     },
     "Footer": {
-        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        "text": "FOOTER: Lorem, ipsum dolor sit amet consectetur adipisicing elit."
     }
 }
