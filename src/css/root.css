@@ -4,6 +4,7 @@
 
     /* App */
     --appPageBackgroundColor: #fff;
+    --appFontColor: #222;
     --appFontSize: 2vh;
     --maxWidth: 1280px;
 
@@ -25,7 +26,8 @@
     --navHeight: 5vh;
     --navBackgroundColor: black;
     --navTextColor: white;
-    --navFontSize: 2vh;
+    --navFontSize: 1.65vh;
+    --navFontSizeSticky: 1vh;
     --navFirstButtonBackgroundColor: rgb(220, 20, 60);
     --navFirstButtonBackgroundColorHover: rgb(177, 10, 43);
     --navFirstButtonBackgroundColorFocus: rgb(143, 0, 29);
@@ -40,8 +42,9 @@
     --mainHeight: 0;
 
     /* Footer */
-    --footerHeight: 5vh;
-    --arrowUpSize: 5vh;
-    --arrowUpColor: crimson;
-    --arrowUpOpacity: 0;
+    --footerHeight: 4vh;
+    --arrowUpSize: 7vh;
+    --arrowUpColor: rgb(220, 20, 60);
+    --arrowBackgroudColor: white;
+    --arrowUpOpacity: 75%;
 }

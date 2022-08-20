@@ -35,6 +35,8 @@
         "text": "Header"
     },
     "Footer": {
-        "text": "FOOTER: Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+        "text": "FOOTER: Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "copyTitle": "copy",
+        "publicYear": "2022"
     }
 }

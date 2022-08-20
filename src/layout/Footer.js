@@ -1,26 +1,37 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import '../css/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ArrowUp from '../components/ArrowUp';
-import setCssRootValue from '../components/setCssRootValue';
 
-export default function Footer({ text }) {
-    const [arrowOpacity, setArrowOpacity] = useState(0);
+function FooterTextElement({ text }) {
+    return (
+        <div className='footer-content-text'>{text}</div>
+    )
+}
+
+function FooterText({ text }) {
+    return (
+        <div className='footer-content'>
+            <FooterTextElement text={text} />
+        </div>
+    )
+}
+
+
+export default function Footer({ text, copyTitle, publicYear }) {
+    const currentYear = new Date().getFullYear();
+
     useEffect(() => {
         window.addEventListener('scroll', () => {
             handleActive(document.querySelector('.footer-arrowUp'))
-            setCssRootValue('--arrowUpOpacity', arrowOpacity, '%')
         })
     })
 
     const handleActive = (item) => {
         const footerHeight = document.querySelector('footer').offsetHeight;
         const maxScroll = document.body.scrollHeight - window.scrollY - window.innerHeight;
-        const opacity = Math.floor(((footerHeight * 100) / maxScroll) - 100);
 
         if (maxScroll <= footerHeight) {
-            if (opacity >= 0) setArrowOpacity(opacity);
-            else if (opacity > 99) setArrowOpacity(100);
             item.classList.add('active');
         }
         else if (maxScroll >= footerHeight) {
@@ -28,12 +39,25 @@ export default function Footer({ text }) {
         }
     }
 
+
     return (
         <footer className="app-footer">
-            <div className='footer-text'>
-                <p>{text}</p>
-            </div>
+            <FooterText text={text} />
             <FontAwesomeIcon className='footer-arrowUp' icon="fa-solid fa-circle-arrow-up" onClick={ArrowUp} />
+            <div className='footer-year'>
+                {currentYear > publicYear ?
+                    <span>
+                        {copyTitle + ' '}
+                        <FontAwesomeIcon icon="fa-solid fa-copyright" />
+                        {` ${publicYear} - ${currentYear}`}
+                    </span> :
+                    <span>
+                        {copyTitle + ' '}
+                        <FontAwesomeIcon icon="fa-solid fa-copyright" />
+                        {` ${currentYear}`}
+                    </span>
+                }
+            </div>
         </footer>
     )
 }
