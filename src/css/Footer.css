@@ -66,19 +66,21 @@ footer .footer-content-text:nth-last-of-type(1)::after {
     cursor: pointer;
     opacity: var(--arrowUpOpacity);
     z-index: 100;
+    animation: arrowUpAnim 0.3s linear forwards;
 }
 
 .footer-year {
     display: block;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.05);
     color: #111;
     line-height: 5vh;
     text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.35);
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
     font-size: 105%;
 }
 
-.footer-year svg {
-    color: var(--navFirstButtonBackgroundColor);
+.footer-year svg:hover {
+    color: black;
+
 }

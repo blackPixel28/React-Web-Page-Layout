@@ -3,6 +3,7 @@ import '../components/FontAwesomeIcon';
 import db from '../db/layout.json';
 import '../css/App.css'
 import '../css/media.css'
+import '../css/keyframes.css'
 
 import Header from '../layout/Header';
 import Main from '../layout/Main';
