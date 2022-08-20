@@ -39,10 +39,12 @@ function NavLinks({ navData }) {
                     className={index === 0 ? "nav-link first-link" : "nav-link"}
                     onClick={handleClickInactiveArrowUp}
                 >
-                    <FontAwesomeIcon icon={navData[index].icon} />
-                    <p className='nav-text'>
-                        {navData[index].text}
-                    </p>
+                    <div className='link-wrap'>
+                        <FontAwesomeIcon icon={navData[index].icon} />
+                        <p className='nav-text'>
+                            {navData[index].text}
+                        </p>
+                    </div>
                 </Link>
             </li >
         ))

@@ -21,8 +21,8 @@ nav {
 .nav-link {
     display: flex;
     flex-direction: column;
-    gap: 1.2vh;
-    padding: 1vh 2vw;
+    /* gap: 1.2vh; */
+    /* padding: 1vh 2vw; */
     text-align: center;
     background-color: var(--navButtonBackgroundColor);
     color: var(--navTextColor);
@@ -63,3 +63,35 @@ nav {
 .first-link:active {
     background-color: var(--navFirstButtonBackgroundColorFocus) !important;
 }
+
+
+.link-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    padding: 1vh 1vw;
+    overflow: hidden;
+}
+
+/* .link-wrap:hover {
+    animation: zoomNav 0.2s 0.1s linear forwards;
+}
+
+@keyframes zoomNav {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.95);
+    }
+
+    75% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */

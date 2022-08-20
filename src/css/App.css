@@ -4,6 +4,7 @@
   font-size: var(--appFontSize);
   max-width: var(--maxWidth);
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .active {
