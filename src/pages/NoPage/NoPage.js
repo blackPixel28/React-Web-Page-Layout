@@ -8,17 +8,17 @@ export default function NoPage({ title, text }) {
 
     return (
         <section className="no-page">
-            <h1>
-                <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" color='#fcad03' />
-                {' ' + title + ' '}
-                <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" color='#fcad03' />
-            </h1>
-            <div>
-                <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" color='#fcad03' fade className='trinagle' />
-                <p className='no-page-text'>
-                    {text}
-                </p>
-                <button className='backBtn' onClick={handleBackPage}>WSTECZ</button>
+            <div className="content">
+                <h1>
+                    {' ' + title + ' '}
+                </h1>
+                <div>
+                    <FontAwesomeIcon icon="fa-solid fa-triangle-exclamation" color='#fcad03' fade className='trinagle' />
+                    <p className='no-page-text'>
+                        {text}
+                    </p>
+                    <button className='backBtn' onClick={handleBackPage}>WSTECZ</button>
+                </div>
             </div>
         </section>
     )

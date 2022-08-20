@@ -21,8 +21,8 @@
             "icon": "fa-solid fa-file"
         },
         {
-            "text": "link4",
-            "link": "/link4",
+            "text": "404",
+            "link": "/error404",
             "icon": "fa-solid fa-file"
         },
         {
