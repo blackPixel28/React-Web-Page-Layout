@@ -5,3 +5,43 @@
     padding: 1.75vh 5vw;
     text-align: justify;
 }
+
+.no-page h1 {
+    text-align: center;
+    margin: 0 0 3vh 0;
+}
+
+.trinagle {
+    font-size: 18vh;
+    width: 100%;
+}
+
+.no-page-text {
+    padding: 4vh 0;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.backBtn {
+    display: block;
+    margin: 0 50%;
+    transform: translateX(-50%);
+    padding: 1.5vh 4vh;
+    background-color: black;
+    color: #eee;
+    font-weight: 700;
+    border: 0;
+    border-radius: 6px;
+    font-size: 2.5vh;
+    cursor: pointer;
+}
+
+.backBtn:hover {
+    background-color: #aaa;
+    color: black;
+}
+
+.backBtn:active {
+    background-color: orange;
+    color: black;
+}

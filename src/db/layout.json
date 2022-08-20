@@ -38,5 +38,9 @@
         "text": "FOOTER: Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "copyTitle": "copy",
         "publicYear": "2022"
+    },
+    "NoPage": {
+        "title": "ERROR 404",
+        "text": "Nie ma takiej strony..."
     }
 }

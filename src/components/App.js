@@ -47,7 +47,7 @@ export default function App() {
     <div className="app">
       <Header navData={db.Nav} text={db.Header.text} />
       < Nav navData={db.Nav} />
-      <Main />
+      <Main data={db} />
       <Footer text={db.Footer.text} copyTitle={db.Footer.copyTitle} publicYear={db.Footer.publicYear} />
     </div >
   )
