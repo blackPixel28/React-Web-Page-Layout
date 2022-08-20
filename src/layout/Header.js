@@ -1,11 +1,14 @@
-import Nav from './Nav';
+import TopBar from './TopBar';
+// import Nav from './Nav';
 import '../css/Header.css';
+import { Link } from 'react-router-dom'
 
-export default function Header({ navDB, text }) {
+export default function Header({ navData, text }) {
     return (
         <header className="app-header">
+            <TopBar text="Witaj... " dataTxt="data: " timeTxt="czas: " />
+            {/* <Nav navData={navData} /> */}
             <HeaderTextAndLogo text={text} />
-            <Nav navDB={navDB} />
         </header>
     )
 }
@@ -13,7 +16,16 @@ export default function Header({ navDB, text }) {
 function HeaderTextAndLogo({ text }) {
     return (
         <div className='header-text-and-logo'>
-            <h1>{text}</h1>
+            <Link
+                key='header-link-to-home'
+                to='/'
+                className='header-text-link'
+            >
+                <h1 className='h1-link'>
+                    {text}
+                </h1>
+            </Link>
+
         </div>
     )
 }

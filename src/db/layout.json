@@ -21,18 +21,22 @@
             "icon": "fa-solid fa-file"
         },
         {
+            "text": "link4",
+            "link": "/link4",
+            "icon": "fa-solid fa-file"
+        },
+        {
             "text": "kontakt",
             "link": "/contact",
             "icon": "fa-solid fa-envelope"
         }
     ],
     "Header": {
-        "text": "headerText"
-    },
-    "Main": {
-        "text": "MainText"
+        "text": "Header"
     },
     "Footer": {
-        "text": "footer"
+        "text": "FOOTER: Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "copyTitle": "copy",
+        "publicYear": "2022"
     }
 }

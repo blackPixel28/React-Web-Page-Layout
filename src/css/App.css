@@ -1,4 +1,26 @@
 .app {
-  background-color: white;
-  font-size: 2vh;
+  position: relative;
+  background-color: var(--appPageBackgroundColor);
+  font-size: var(--appFontSize);
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  color: var(--appFontColor);
+}
+
+.active {
+  display: block !important;
+}
+
+.inactive {
+  display: hidden !important;
+}
+
+.stick {
+  /* Nav */
+  --navHeight: 2vh;
+  --navFontSize: 1.45vh;
+  box-shadow: 0 2px 10px 1px black;
+
+  /* Nav Icon */
+  --navIconSize: 1.6vh;
 }
