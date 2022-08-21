@@ -3,10 +3,10 @@ import TopBar from './TopBar';
 import '../css/Header.css';
 import { Link } from 'react-router-dom'
 
-export default function Header({ navData, text }) {
+export default function Header({ navData, text, topBarData }) {
     return (
         <header className="app-header">
-            <TopBar text="Witaj... " dataTxt="data: " timeTxt="czas: " />
+            <TopBar text={topBarData.text} dataTxt="data: " timeTxt="czas: " />
             {/* <Nav navData={navData} /> */}
             <HeaderTextAndLogo text={text} />
         </header>
