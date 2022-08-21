@@ -26,6 +26,7 @@
 }
 
 .topBar-date-time {
+    font-weight: 400;
     flex-grow: 1;
 }
 
