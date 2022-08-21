@@ -6,6 +6,7 @@
     min-width: 100%;
     min-height: var(--topBarHeight);
     font-size: var(--topBarFontSize);
+    letter-spacing: 0.8px;
 }
 
 .app-topBar p {
@@ -21,6 +22,7 @@
     text-align: left;
     font-weight: 700;
     flex-grow: 2;
+    text-transform: uppercase;
 }
 
 .topBar-date-time {
