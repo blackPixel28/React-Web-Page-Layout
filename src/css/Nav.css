@@ -6,6 +6,7 @@ nav {
     z-index: 100;
     background-color: var(--navBackgroundColor);
     transition: 0.3s;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
 .nav-ul {

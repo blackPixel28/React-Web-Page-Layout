@@ -2,7 +2,7 @@
   position: relative;
   background-color: var(--appPageBackgroundColor);
   font-size: var(--appFontSize);
-  max-width: var(--maxWidth);
+  max-width: var(--appMaxWidth);
   margin: 0 auto;
   color: var(--appFontColor);
 }

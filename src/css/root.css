@@ -6,7 +6,7 @@
     --appPageBackgroundColor: #fff;
     --appFontColor: #222;
     --appFontSize: 2vh;
-    --maxWidth: 1280px;
+    --appMaxWidth: 1280px;
 
     /* Top-Bar */
     --topBarHeight: 3vh;
