@@ -28,13 +28,13 @@ export default function Footer({ text, copyTitle, publicYear }) {
     })
 
     const handleActive = (item) => {
-        const footerHeight = document.querySelector('footer').offsetHeight;
-        const maxScroll = document.body.scrollHeight - window.scrollY - window.innerHeight;
+        const element = document.querySelector('header').offsetHeight;
+        const scrollY = window.scrollY;
 
-        if (maxScroll <= footerHeight) {
+        if (scrollY >= element) {
             item.classList.add('active');
         }
-        else if (maxScroll >= footerHeight) {
+        else if (scrollY < element) {
             item.classList.remove('active');
         }
     }
