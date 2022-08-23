@@ -1,19 +1,19 @@
+// import { useState, useEffect } from 'react';
 import TopBar from './TopBar';
-// import Nav from './Nav';
 import '../css/Header.css';
 import { Link } from 'react-router-dom'
+// import Carousel from '../components/Carousel';
 
-export default function Header({ navData, text, topBarData }) {
+export default function Header({ topBarDB, headerDB }) {
     return (
         <header className="app-header">
-            <TopBar text={topBarData.text} dataTxt="data: " timeTxt="czas: " />
-            {/* <Nav navData={navData} /> */}
-            <HeaderTextAndLogo text={text} />
+            <TopBar text={topBarDB.text} dataTxt={topBarDB.dateTxt + ' '} timeTxt={topBarDB.timeTxt + ' '} />
+            <HeaderTextAndLogo headerDB={headerDB} />
         </header>
     )
 }
 
-function HeaderTextAndLogo({ text }) {
+function HeaderTextAndLogo({ headerDB }) {
     return (
         <div className='header-text-and-logo'>
             <Link
@@ -22,7 +22,7 @@ function HeaderTextAndLogo({ text }) {
                 className='header-text-link'
             >
                 <h1 className='h1-link'>
-                    {text}
+                    {headerDB.text}
                 </h1>
             </Link>
 
