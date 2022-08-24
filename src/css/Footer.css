@@ -52,23 +52,6 @@ footer .footer-content-text:nth-last-of-type(1)::after {
     border-bottom: 0;
 }
 
-.footer-arrowUp {
-    display: none;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    /* flex-basis: 10%; */
-    /* padding: 2vh 5vw 3vh 1vw; */
-    font-size: var(--arrowUpSize);
-    color: var(--arrowUpColor);
-    background-color: var(--arrowBackgroudColor);
-    border-radius: 50%;
-    cursor: pointer;
-    opacity: var(--arrowUpOpacity);
-    z-index: 100;
-    animation: arrowUpAnim 0.3s linear forwards;
-}
-
 .footer-year {
     display: block;
     position: relative;
