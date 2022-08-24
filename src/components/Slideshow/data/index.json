@@ -1,0 +1,20 @@
+[
+    {
+        "title": "title-0",
+        "text": "lorem ipsum0",
+        "color": "#0088FE",
+        "img": "https://images.wallpaperscraft.com/image/single/palm_tree_branch_tropics_111142_3264x2448.jpg"
+    },
+    {
+        "title": "title-1",
+        "text": "lorem ipsum1",
+        "color": "#00C49F",
+        "img": "https://images.wallpaperscraft.com/image/single/boat_sea_alone_121414_4080x3936.jpg"
+    },
+    {
+        "title": "title-2",
+        "text": "lorem ipsum2",
+        "color": "#FFBB28",
+        "img": "https://images.wallpaperscraft.com/image/single/desert_sand_night_129966_3744x5616.jpg"
+    }
+]
