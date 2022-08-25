@@ -21,6 +21,10 @@
     --headerTextColor: #eee;
     --headerHeight: calc(var(--headTextAndLogo) + var(--topBarHeight));
 
+    /* Slideshow */
+    --slideshowDotColor: #333;
+    --slideshowDotColorActive: crimson;
+
     /* Nav */
     --navButtonNumber: 6;
     --navHeight: 5vh;

@@ -4,7 +4,6 @@
     overflow: hidden;
     max-width: 100%;
     height: auto;
-    padding: 0 0 1vh 0;
     color: black;
 }
 
@@ -31,18 +30,50 @@
     height: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
-    color: black;
+    color: white;
     font-weight: 700;
-    text-shadow: 0 0 6px white, 0 0 10px black;
+    text-shadow: 0 0 3px black, 0 0 3px white, 0 0 20px black;
+}
+
+.slide-content-title {
+    position: relative;
+    padding: 1vh 0;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 3.3vh;
+}
+
+.slide-content-title::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 101;
+}
+
+.slide-content-text {
+    text-transform: lowercase;
+    letter-spacing: 0.6px;
+    font-size: 1.9vh;
+}
+
+.slide-content-text::first-letter {
+    text-transform: capitalize;
 }
 
 /* Buttons */
 
 .slideshowDots {
-    /* background-color: aqua; */
+    background-color: black;
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 0 0 1vh 0;
 }
 
 .slideshowDot {
@@ -50,13 +81,11 @@
     height: 1.5vh;
     width: 1.5vh;
     border-radius: 50%;
-
     cursor: pointer;
     margin: 15px 7px 0px;
-
-    background-color: #c4c4c4;
+    background-color: var(--slideshowDotColor);
 }
 
 .slideshowDot.active {
-    background-color: #6a0dad;
+    background-color: var(--slideshowDotColorActive);
 }
