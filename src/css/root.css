@@ -22,8 +22,14 @@
     --headerHeight: calc(var(--headTextAndLogo) + var(--topBarHeight));
 
     /* Slideshow */
-    --slideshowDotColor: #333;
-    --slideshowDotColorActive: crimson;
+    --slideshowDotColor: rgba(255, 255, 255, 0.15);
+    --slideshowDotColorActive: rgba(220, 20, 60, 0.9);
+    --slideshowHeight: 20vh;
+
+    /* Slideshow Arrow */
+    --arrowLeftSlideSize: 4vh;
+    --arrowButtonHeight: 8vh;
+    --dotSlideshowHeight: 3vh;
 
     /* Nav */
     --navButtonNumber: 6;

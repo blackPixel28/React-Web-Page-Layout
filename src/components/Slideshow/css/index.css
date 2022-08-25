@@ -1,6 +1,7 @@
 /* Slideshow */
 
 .slideshow {
+    position: relative;
     overflow: hidden;
     max-width: 100%;
     height: auto;
@@ -12,9 +13,65 @@
     transition: ease 1000ms;
 }
 
+.slideshow-Arrow {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: none;
+    position: absolute;
+    top: calc((var(--slideshowHeight) - (var(--arrowButtonHeight) + var(--dotSlideshowHeight))) / 2);
+    width: var(--arrowLeftSlideSize);
+    height: var(--arrowButtonHeight);
+    /* background-color: rgba(255, 255, 255, 0.20); */
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+    /* background-color: red; */
+    transition: 0.3s;
+    z-index: 100;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    ;
+    cursor: pointer;
+    padding: 0.5vh;
+}
+
+.slideshow-Arrow:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+}
+
+.slideshow-Arrow svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: var(--arrowLeftSlideSize);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.slideshow-Arrow svg:hover {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.Left {
+    left: 0;
+    text-align: right;
+    /* padding: 0 0.3vh 0 0.3vh; */
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0 5px 5px 0;
+}
+
+.Right {
+    text-align: left;
+    right: 0;
+    /* padding: 0 0.3vh 0 0.3vh; */
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px 0 0 5px;
+}
+
+
 .slide {
     display: inline-block;
-    height: 20vh;
+    height: var(--slideshowHeight);
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -50,7 +107,7 @@
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 70%;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 101;
@@ -69,11 +126,25 @@
 /* Buttons */
 
 .slideshowDots {
-    background-color: black;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px 5px 0 0;
+    width: 90%;
+    height: var(--dotSlideshowHeight);
+    background-color: rgba(0, 0, 0, 0.65);
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 0 1vh 0;
+    z-index: 101;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
 .slideshowDot {
@@ -82,10 +153,18 @@
     width: 1.5vh;
     border-radius: 50%;
     cursor: pointer;
-    margin: 15px 7px 0px;
+    margin: 0 15px 0 0px;
     background-color: var(--slideshowDotColor);
 }
 
 .slideshowDot.active {
     background-color: var(--slideshowDotColorActive);
+    box-shadow: 0 0 5px rgba(143, 0, 29, 0.6);
+    ;
+}
+
+@media (min-width:1024px) {
+    .slideshow-Arrow {
+        display: block;
+    }
 }

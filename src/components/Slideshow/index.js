@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect, useRef } from "react";
 import './css/index.css';
 import slideData from './data';
@@ -28,27 +29,44 @@ export default function Slideshow() {
         eventTouchX > touchStart ? direction = 'right' : direction = 'left';
 
         if (direction === 'right') {
-            resetTimeout();
-            timeoutRef.current = setTimeout(
-                () =>
-                    setIndex((prevIndex) =>
-                        prevIndex === 0 ? prevIndex = slideData.slide.length - 1 : prevIndex - 1
-                    ),
-                touchDelay
-            );
+            handleLeft(touchDelay)
         }
         else if (direction === 'left') {
-            resetTimeout();
-            timeoutRef.current = setTimeout(
-                () =>
-                    setIndex((prevIndex) =>
-                        prevIndex === slideData.slide.length - 1 ? 0 : prevIndex + 1
-                    ),
-                touchDelay
-            );
+            handleRight(touchDelay)
         }
         console.log(direction)
     }
+
+
+    const handleLeft = (delay) => {
+        resetTimeout();
+        timeoutRef.current = setTimeout(
+            () =>
+                setIndex((prevIndex) =>
+                    prevIndex === 0 ? prevIndex = slideData.slide.length - 1 : prevIndex - 1
+                ),
+            delay
+        )
+    }
+
+    const handleRight = (delay) => {
+        resetTimeout();
+        timeoutRef.current = setTimeout(
+            () =>
+                setIndex((prevIndex) =>
+                    prevIndex === slideData.slide.length - 1 ? 0 : prevIndex + 1
+                ),
+            delay
+        )
+    }
+
+
+    const handleArrow = (direction) => {
+        if (direction === 'left') handleLeft(0);
+        else if (direction === 'right') handleRight(0);
+        return console.log(direction)
+    }
+
 
     useEffect(() => {
         resetTimeout();
@@ -67,6 +85,12 @@ export default function Slideshow() {
 
     return (
         <div className="slideshow">
+            <div className="slideshow-Arrow Left" onClick={() => handleArrow('left')} >
+                <FontAwesomeIcon icon="fa-solid fa-circle-arrow-left" onClick={() => handleArrow('left')} />
+            </div>
+            <div className="slideshow-Arrow Right" onClick={() => handleArrow('right')} >
+                <FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" onClick={() => handleArrow('right')} />
+            </div>
             <div
                 className="slideshowSlider"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
