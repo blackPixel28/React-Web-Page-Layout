@@ -6,12 +6,12 @@
     --appPageBackgroundColor: #fff;
     --appFontColor: #222;
     --appFontSize: 2vh;
-    --maxWidth: 1280px;
+    --appMaxWidth: 1280px;
 
     /* Top-Bar */
     --topBarHeight: 3vh;
     --topBarBackgroundColor: rgb(105, 0, 21);
-    --topBarColor: rgb(252, 185, 199);
+    --topBarColor: rgb(238, 238, 238);
     --topBarFontSize: 1.7vh;
 
     /* Header */
@@ -20,6 +20,16 @@
     --headerTextAndLogo: 15vh;
     --headerTextColor: #eee;
     --headerHeight: calc(var(--headTextAndLogo) + var(--topBarHeight));
+
+    /* Slideshow */
+    --slideshowDotColor: rgba(255, 255, 255, 0.15);
+    --slideshowDotColorActive: rgba(220, 20, 60, 0.9);
+    --slideshowHeight: 25vh;
+
+    /* Slideshow Arrow */
+    --arrowLeftSlideSize: 4vh;
+    --arrowButtonHeight: 8vh;
+    --dotSlideshowHeight: 3vh;
 
     /* Nav */
     --navButtonNumber: 6;

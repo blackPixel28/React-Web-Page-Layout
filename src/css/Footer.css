@@ -5,10 +5,10 @@ footer {
     align-items: flex-end; */
     min-height: var(--footerHeight);
     background-color: rgba(0, 0, 0, 0.1);
-    color: #111;
+    color: #666;
     transition: 0.5s;
-    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.3);
-    border-top: 1px solid rgba(0, 0, 0, 0.35);
+    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* .app-footer::before {
@@ -52,33 +52,18 @@ footer .footer-content-text:nth-last-of-type(1)::after {
     border-bottom: 0;
 }
 
-.footer-arrowUp {
-    display: none;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    /* flex-basis: 10%; */
-    /* padding: 2vh 5vw 3vh 1vw; */
-    font-size: var(--arrowUpSize);
-    color: var(--arrowUpColor);
-    background-color: var(--arrowBackgroudColor);
-    border-radius: 50%;
-    cursor: pointer;
-    opacity: var(--arrowUpOpacity);
-    z-index: 100;
-}
-
 .footer-year {
     display: block;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #111;
+    background-color: rgba(0, 0, 0, 0.04);
+    color: #999;
     line-height: 5vh;
     text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.35);
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
     font-size: 105%;
 }
 
-.footer-year svg {
-    color: var(--navFirstButtonBackgroundColor);
+.footer-year svg:hover {
+    color: black;
+
 }

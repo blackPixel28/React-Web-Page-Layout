@@ -3,6 +3,7 @@ import '../components/FontAwesomeIcon';
 import db from '../db/layout.json';
 import '../css/App.css'
 import '../css/media.css'
+import '../css/keyframes.css'
 
 import Header from '../layout/Header';
 import Main from '../layout/Main';
@@ -44,9 +45,9 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header navData={db.Nav} text={db.Header.text} />
+      <Header headerDB={db.Header} topBarDB={db.TopBar} />
       < Nav navData={db.Nav} />
-      <Main />
+      <Main data={db} />
       <Footer text={db.Footer.text} copyTitle={db.Footer.copyTitle} publicYear={db.Footer.publicYear} />
     </div >
   )

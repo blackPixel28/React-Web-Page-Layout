@@ -21,8 +21,8 @@
             "icon": "fa-solid fa-file"
         },
         {
-            "text": "link4",
-            "link": "/link4",
+            "text": "404",
+            "link": "/error404",
             "icon": "fa-solid fa-file"
         },
         {
@@ -31,6 +31,11 @@
             "icon": "fa-solid fa-envelope"
         }
     ],
+    "TopBar": {
+        "text": "Witaj...",
+        "dateTxt": "data:",
+        "timeTxt": "czas:"
+    },
     "Header": {
         "text": "Header"
     },
@@ -38,5 +43,9 @@
         "text": "FOOTER: Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "copyTitle": "copy",
         "publicYear": "2022"
+    },
+    "NoPage": {
+        "title": "ERROR 404",
+        "text": "Nie ma takiej strony..."
     }
 }
