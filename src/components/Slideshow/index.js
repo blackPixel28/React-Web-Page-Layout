@@ -107,8 +107,14 @@ export default function Slideshow() {
                         onTouchMove={(e) => handleTouchMove(index, e)}
                     >
                         <div className="slide-content">
-                            <h3 className="slide-content-title">{item.title}</h3>
-                            <p className="slide-content-text">{item.text}</p>
+                            <h3 className="slide-content-title">
+                                {item.title}
+                            </h3>
+                            <p className="slide-content-text">
+                                <span>
+                                    {item.text}
+                                </span>
+                            </p>
                         </div>
                     </div>
                 ))}

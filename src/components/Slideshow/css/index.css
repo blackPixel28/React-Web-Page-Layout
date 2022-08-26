@@ -84,42 +84,67 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 10px;
     height: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     font-weight: 700;
     text-shadow: 0 0 3px black, 0 0 3px white, 0 0 20px black;
+    /* background-color: red; */
+    overflow: hidden;
+    padding: 0 0 var(--dotSlideshowHeight) 0;
+}
+
+.slide-content-text,
+.slide-content-title {
+    white-space: normal !important;
 }
 
 .slide-content-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-basis: 50%;
     position: relative;
-    padding: 1vh 0;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     font-size: 3.3vh;
+    /* background-color: lime !important; */
+    text-shadow: 0 0 3px black, 0 0 10px rgba(255, 255, 255, 0.5);
+    max-width: 85%;
+    overflow: hidden;
 }
 
-.slide-content-title::after {
+.slide-content::after {
     content: '';
     display: block;
-    position: fixed;
-    top: 56%;
+    position: absolute;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
+    transform: translate(-50%, -200%);
+    width: 85%;
     height: 2px;
-    background-color: rgba(255, 255, 255, 0.7);
-    z-index: 101;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 25px;
 }
 
 .slide-content-text {
-    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 50%;
+    max-width: 85%;
     letter-spacing: 0.6px;
+    line-height: 125%;
     font-size: 1.9vh;
+    text-transform: lowercase;
+    text-shadow: 0 0 3px black, 0 0 20px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    overflow: hidden;
 }
 
-.slide-content-text::first-letter {
+.slide-content-text span::first-letter {
     text-transform: capitalize;
 }
 
@@ -136,7 +161,8 @@
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px 5px 0 0;
-    width: 90%;
+    width: auto;
+    padding: 1.2vh 2vh 1vh 2vh;
     height: var(--dotSlideshowHeight);
     background-color: rgba(0, 0, 0, 0.65);
     display: flex;
@@ -155,6 +181,10 @@
     cursor: pointer;
     margin: 0 15px 0 0px;
     background-color: var(--slideshowDotColor);
+}
+
+.slideshowDot:nth-last-child(1) {
+    margin: 0;
 }
 
 .slideshowDot.active {

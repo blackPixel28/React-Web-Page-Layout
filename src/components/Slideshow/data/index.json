@@ -3,39 +3,39 @@
     "slide": [
         {
             "title": "title-0",
-            "text": "lorem ipsum0",
+            "text": "lorem ipsum-0",
             "color": "#0088FE",
             "img": "https://images.wallpaperscraft.com/image/single/backlight_neon_electronics_144683_1280x960.jpg"
         },
         {
             "title": "title-1",
-            "text": "lorem ipsum1",
+            "text": "lorem ipsum-1",
             "color": "#00C49F",
-            "img": "https://images.wallpaperscraft.com/image/single/flowers_buds_book_351060_1280x800.jpg"
+            "img": "https://images.wallpaperscraft.com/image/single/keyboard_laptop_gradient_203739_1280x960.jpg"
         },
         {
             "title": "title-2",
-            "text": "lorem ipsum2",
+            "text": "lorem ipsum-2",
             "color": "#FFBB28",
             "img": "https://images.wallpaperscraft.com/image/single/keyboard_backlight_purple_212155_1280x960.jpg"
         },
         {
             "title": "title-3",
-            "text": "lorem ipsum0",
+            "text": "lorem ipsum-3",
             "color": "#0088FE",
             "img": "https://images.wallpaperscraft.com/image/single/code_letters_screen_137590_1280x960.jpg"
         },
         {
             "title": "title-4",
-            "text": "lorem ipsum1",
+            "text": "lorem ipsum-4",
             "color": "#00C49F",
             "img": "https://images.wallpaperscraft.com/image/single/lens_camera_glare_147903_1280x960.jpg"
         },
         {
             "title": "title-5",
-            "text": "lorem ipsum2",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta velit dolore illum.",
             "color": "#FFBB28",
-            "img": "https://images.wallpaperscraft.com/image/single/code_programming_text_140050_1280x960.jpg"
+            "img": "https://images.wallpaperscraft.com/image/single/laptop_dj_equipment_212416_1280x960.jpg"
         }
     ]
 }
