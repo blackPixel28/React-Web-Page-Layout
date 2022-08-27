@@ -11,6 +11,23 @@
     border-radius: 50%;
     cursor: pointer;
     opacity: var(--arrowUpOpacity);
-    z-index: 100;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--arrowBackgroudColor);
+    z-index: 1001;
     animation: arrowUpAnim 0.3s linear forwards;
+}
+
+
+@keyframes arrowUpAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

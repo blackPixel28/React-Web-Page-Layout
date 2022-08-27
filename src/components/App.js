@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import '../components/FontAwesomeIcon';
 import db from '../db/layout.json';
 import '../css/App.css'
-import '../css/media.css'
-import '../css/keyframes.css'
 import { Header, Main, Footer, Nav } from '../layout';
 
 export default function App() {
