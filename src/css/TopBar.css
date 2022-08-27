@@ -7,7 +7,9 @@
     min-height: var(--topBarHeight);
     font-size: var(--topBarFontSize);
     letter-spacing: 0.8px;
-    box-shadow: 0 0 3px 1px black;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
 .app-topBar p {

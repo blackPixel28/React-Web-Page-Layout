@@ -5,24 +5,3 @@ header {
     min-height: var(--headerHeight);
     background-color: var(--headerBackgroundColor);
 }
-
-header a {
-    text-decoration: none;
-}
-
-.header-text-and-logo {
-    background-color: var(--TextAndLogoBackgroundColor);
-    min-height: var(--headTextAndLogo);
-    /* cursor: pointer; */
-}
-
-.header-text-and-logo h1 {
-    color: var(--headerTextColor);
-    text-align: center;
-    text-transform: uppercase;
-    line-height: var(--headerTextAndLogo);
-}
-
-.header-text-and-logo h1:hover {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}

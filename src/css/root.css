@@ -10,26 +10,34 @@
 
     /* Top-Bar */
     --topBarHeight: 3vh;
-    --topBarBackgroundColor: rgb(105, 0, 21);
-    --topBarColor: rgb(238, 238, 238);
+    --topBarBackgroundColor: var(--navButtonBackgroundColor);
+    --topBarColor: #999;
     --topBarFontSize: 1.7vh;
 
     /* Header */
     --headerBackgroundColor: black;
-    --TextAndLogoBackgroundColor: black;
-    --headerTextAndLogo: 15vh;
-    --headerTextColor: #eee;
-    --headerHeight: calc(var(--headTextAndLogo) + var(--topBarHeight));
+    --headerHeight: calc(var(--topBarHeight) + var(--slideshowHeight));
 
     /* Slideshow */
-    --slideshowDotColor: rgba(255, 255, 255, 0.15);
-    --slideshowDotColorActive: rgba(220, 20, 60, 0.9);
-    --slideshowHeight: 25vh;
+    --slidershowFilter: blur(3px);
+    --slideshowHeight: 28vh;
+    --slidershowColor: #fff;
+    --slidershowTextBackground: rgba(0, 0, 0, 0.3);
 
     /* Slideshow Arrow */
+    --slidershowArrowBackgroundColor: rgba(0, 0, 0, 0.25);
+    --slidershowArrowBackgroundColorHover: rgba(0, 0, 0, 0.35);
+    --slidershowArrowColorSVG: rgba(255, 255, 255, 0.3);
+    --slidershowArrowColorHoverSVG: rgba(255, 255, 255, 0.55);
+    --slidershowArrowFilter: blur(10px);
     --arrowLeftSlideSize: 4vh;
     --arrowButtonHeight: 8vh;
     --dotSlideshowHeight: 3vh;
+
+    /* Slideshow Dots */
+    --slideshowDotColor: rgba(255, 255, 255, 0.15);
+    --slideshowDotColorActive: rgba(220, 20, 60, 0.9);
+    --slidershowArrowBackgroundColor: rgba(0, 0, 0, 0.75);
 
     /* Nav */
     --navButtonNumber: 6;
@@ -53,8 +61,10 @@
 
     /* Footer */
     --footerHeight: 4vh;
+
+    /* ArrowUp */
     --arrowUpSize: 7vh;
     --arrowUpColor: rgb(220, 20, 60);
     --arrowBackgroudColor: white;
-    --arrowUpOpacity: 75%;
+    --arrowUpOpacity: 70%;
 }
