@@ -23,6 +23,8 @@ nav {
 .nav-link {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* gap: 1.2vh; */
     /* padding: 1vh 2vw; */
     text-align: center;
@@ -32,6 +34,7 @@ nav {
     font-size: var(--navFontSize);
     text-transform: uppercase;
     border-radius: var(--navButtonRadius);
+    min-height: var(--navHeight);
 }
 
 .nav-li svg {

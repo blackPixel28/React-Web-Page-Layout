@@ -173,8 +173,8 @@
 
 .slideshowDot {
     display: inline-block;
-    height: 1.5vh;
-    width: 1.5vh;
+    height: var(--slideshowDotSize);
+    width: var(--slideshowDotSize);
     border-radius: 50%;
     cursor: pointer;
     margin: 0 15px 0 0px;
@@ -191,7 +191,7 @@
     animation: dotAmin 0.5s forwards;
 }
 
-@media (min-width:1024px) {
+@media (min-width:640px) {
     .slideshow-Arrow {
         display: block;
     }

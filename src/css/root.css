@@ -35,6 +35,7 @@
     --dotSlideshowHeight: 3vh;
 
     /* Slideshow Dots */
+    --slideshowDotSize: 1.5vh;
     --slideshowDotColor: rgba(255, 255, 255, 0.15);
     --slideshowDotColorActive: rgba(220, 20, 60, 0.9);
     --slidershowArrowBackgroundColor: rgba(0, 0, 0, 0.75);
@@ -67,4 +68,44 @@
     --arrowUpColor: rgb(220, 20, 60);
     --arrowBackgroudColor: white;
     --arrowUpOpacity: 70%;
+}
+
+
+
+@media (orientation:landscape) {
+    .app {
+        /* Body  */
+        --appFontSize: 4vh;
+
+        /* Top-Bar */
+        --topBarHeight: 8vh;
+        --topBarFontSize: 3.2vh;
+
+        /* Slideshow */
+        --slideshowHeight: 35vh;
+
+        /* Slideshow Arrow*/
+        --arrowLeftSlideSize: 8vh;
+        --arrowButtonHeight: 16vh;
+        --dotSlideshowHeight: 6vh;
+
+        /* Slideshow Dots */
+        --slideshowDotSize: 2.6vh;
+
+        /* Nav */
+        --navHeight: 15vh;
+        --navFontSize: 4.1vh;
+
+        /* font nie działa  */
+        /* --navFontSizeSticky: 3vh; */
+
+        /* Nav Icon */
+        --navIconSize: 5vh;
+
+        /* Footer */
+        --footerHeight: 12vh;
+
+        /* ArrowUp */
+        --arrowUpSize: 14vh;
+    }
 }
