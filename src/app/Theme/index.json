@@ -1,0 +1,12 @@
+{
+    "light": {
+        "appFontColor": "#222",
+        "bodyBackgroundColor": "#f0f0f0",
+        "appPageBackgroundColor": "#fff"
+    },
+    "dark": {
+        "appFontColor": "#eee",
+        "bodyBackgroundColor": "#000",
+        "appPageBackgroundColor": "#222"
+    }
+}

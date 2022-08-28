@@ -1,6 +1,6 @@
-const SetCssRootValue = (valueName = null, value = null, ext = 'px', className = ':root') => {
-    if (valueName || value) return console.error('valueName or value is null');
-    return document.querySelector(className).style.setProperty(valueName, `${value}${ext}`)
+const SetCssRootValue = (valueName = null, value = null, ext = null) => {
+    // if (valueName || value) return console.error('valueName or value is null');
+    return document.querySelector(':root').style.setProperty(valueName, `${value}${ext === null ? '' : ext}`)
 }
 
 export default SetCssRootValue;

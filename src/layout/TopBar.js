@@ -3,12 +3,12 @@ import GetDate from '../components/GetDate';
 import GetTime from '../components/GetTime';
 import ThemeSwitch from '../components/ThemeSwitch';
 
-export default function TopBar({ text, dateTitle, timeTitle }) {
+export default function TopBar({ text, dateTitle, timeTitle, setActiveTheme, themes }) {
 
     return (
         <section className="app-topBar">
             <TopBarText text={text} />
-            <ThemeSwitch />
+            <ThemeSwitch setActiveTheme={setActiveTheme} themes={themes} />
             <TopBarDataTime dateTitle={dateTitle} timeTitle={timeTitle} />
         </section>
     )
