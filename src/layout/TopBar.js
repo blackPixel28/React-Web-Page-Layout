@@ -3,13 +3,13 @@ import GetDate from '../components/GetDate';
 import GetTime from '../components/GetTime';
 import ThemeSwitch from '../components/ThemeSwitch';
 
-export default function TopBar({ text, dataTxt, timeTxt }) {
+export default function TopBar({ text, dateTitle, timeTitle }) {
 
     return (
         <section className="app-topBar">
             <TopBarText text={text} />
             <ThemeSwitch />
-            <TopBarDataTime dataTxt={dataTxt} timeTxt={timeTxt} />
+            <TopBarDataTime dateTitle={dateTitle} timeTitle={timeTitle} />
         </section>
     )
 }
@@ -23,11 +23,11 @@ const TopBarText = ({ text }) => {
         </div>
     )
 }
-const TopBarDataTime = ({ dataTxt, timeTxt }) => {
+const TopBarDataTime = ({ dateTitle, timeTitle }) => {
     return (
         <div className='topBar-date-time'>
-            <GetDate dataTxt={dataTxt} />
-            <GetTime timeTxt={timeTxt} />
+            <GetDate dateTitle={dateTitle} />
+            <GetTime timeTitle={timeTitle} />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const GetTime = ({ timeTxt }) => {
+const GetTime = ({ timeTitle }) => {
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
@@ -19,7 +19,7 @@ const GetTime = ({ timeTxt }) => {
 
     return (
         <span className='topBar-time'>
-            {`${timeTxt}${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`}
+            {`${timeTitle}${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`}
         </span>
     )
 }

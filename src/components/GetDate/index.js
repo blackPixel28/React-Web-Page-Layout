@@ -1,4 +1,4 @@
-const GetDate = ({ dataTxt }) => {
+const GetDate = ({ dateTitle }) => {
     const handleDate = () => {
         const d = new Date();
         const date = d.toISOString().slice(0, 10).split('-');
@@ -7,7 +7,7 @@ const GetDate = ({ dataTxt }) => {
 
     return (
         <span className='topBar-date'>
-            {`${dataTxt}${handleDate()}`}
+            {`${dateTitle}${handleDate()}`}
         </span>
     )
 }

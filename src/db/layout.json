@@ -33,8 +33,8 @@
     ],
     "TopBar": {
         "text": "Witaj...",
-        "dateTxt": "data:",
-        "timeTxt": "czas:"
+        "dateTitle": "data:",
+        "timeTitle": "czas:"
     },
     "Header": {
         "text": "Header"
