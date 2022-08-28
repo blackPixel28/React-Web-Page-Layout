@@ -1,6 +1,9 @@
 .app-topBar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 5vh;
+    padding: 0.2vh 0.8vh;
     background-color: var(--topBarBackgroundColor);
     color: var(--topBarColor);
     min-width: 100%;
@@ -12,28 +15,18 @@
     z-index: 1;
 }
 
-.app-topBar p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-basis: 20%;
-    padding: 0.5vh 3vw;
-}
 
 .topBar-text {
-    text-align: left;
+    flex-grow: 1;
+    text-align: center;
     font-weight: 700;
-    flex-grow: 2;
     text-transform: uppercase;
 }
 
 .topBar-date-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     font-weight: 400;
-    flex-grow: 1;
-}
-
-.app-topBar span {
-    display: block;
-    flex-basis: 100%;
 }
