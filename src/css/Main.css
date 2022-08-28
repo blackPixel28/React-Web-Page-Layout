@@ -1,4 +1,5 @@
 main {
     min-height: var(--mainHeight);
     flex-grow: 1;
+    transition: 0.3s;
 }

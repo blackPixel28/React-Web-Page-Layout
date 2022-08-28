@@ -68,12 +68,17 @@
 
     /* Footer */
     --footerHeight: 4vh;
+    --footerFontColor: #666;
+    --footerYearFontColor: #999;
 
     /* ArrowUp */
     --arrowUpSize: 7vh;
     --arrowUpColor: rgb(220, 20, 60);
     --arrowBackgroudColor: white;
     --arrowUpOpacity: 70%;
+
+    /* NoPage */
+    --noPageBackground: #fff;
 }
 
 
