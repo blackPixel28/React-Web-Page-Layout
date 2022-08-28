@@ -52,10 +52,16 @@
     --navFirstButtonBackgroundColorFocus: rgb(143, 0, 29);
     --navButtonBackgroundColor: #111;
     --navButtonRadius: 0;
+    --navTransition: 0.2s;
 
     /* Nav Icon */
     --navIconSize: 2.4vh;
     --navIconColor: white;
+
+    /* Nav Sitck */
+    --navStickHeight: 2vh !important;
+    --navSickFontSize: 1.45vh !important;
+    --navStickIconSize: 1.9vh !important;
 
     /* Main */
     --mainHeight: 0;
@@ -73,7 +79,7 @@
 
 
 @media (orientation:landscape) {
-    .app {
+    :root {
         /* Body  */
         --appFontSize: 4vh;
 
@@ -96,16 +102,19 @@
         --navHeight: 15vh;
         --navFontSize: 4.1vh;
 
-        /* font nie działa  */
-        /* --navFontSizeSticky: 3vh; */
-
         /* Nav Icon */
         --navIconSize: 5vh;
+
+        /* Nav Sitck */
+        --navStickHeight: 10vh !important;
+        --navSickFontSize: 3vh !important;
+        --navStickIconSize: 3.5vh;
 
         /* Footer */
         --footerHeight: 12vh;
 
         /* ArrowUp */
         --arrowUpSize: 14vh;
+
     }
 }
