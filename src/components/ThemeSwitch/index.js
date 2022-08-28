@@ -4,7 +4,7 @@ import './css/index.css'
 
 const ThemeSwitch = ({ setActiveTheme, themes }) => {
     const [theme, setTheme] = useState(false);
-    const [switchColor, setSwitchColor] = useState(false);
+    const [switchColor, setSwitchColor] = useState('white');
     const { light, dark } = themes;
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const ThemeSwitch = ({ setActiveTheme, themes }) => {
 
     return (
         <div className="themeSwitch">
-            <div className='switch' onClick={() => handleSwitchTheme(theme)}>
+            <div className='switch' onClick={() => handleSwitchTheme(theme)} style={theme === true ? { transform: 'rotate(180deg)' } : { transform: 'rotate(0deg)' }}>
                 <FontAwesomeIcon icon="fa-solid fa-circle-half-stroke" color={switchColor} />
             </div>
         </div>
