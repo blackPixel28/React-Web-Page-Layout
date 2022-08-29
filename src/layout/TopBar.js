@@ -4,7 +4,6 @@ import GetTime from '../components/GetTime';
 import ThemeSwitch from '../components/ThemeSwitch';
 
 export default function TopBar({ text, dateTitle, timeTitle, setActiveTheme, themes }) {
-
     return (
         <section className="app-topBar">
             <TopBarText text={text} />

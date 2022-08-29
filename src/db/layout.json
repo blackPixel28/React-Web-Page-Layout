@@ -32,7 +32,7 @@
         }
     ],
     "TopBar": {
-        "text": "lorem",
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "dateTitle": "Date:",
         "timeTitle": "Time:"
     },
