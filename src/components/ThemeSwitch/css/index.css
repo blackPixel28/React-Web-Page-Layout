@@ -1,14 +1,13 @@
 .themeSwitch {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.15);
+    min-width: calc(var(--topBarHeight) * 1.4);
+    /* min-height: calc(var(--topBarHeight) / 1.2); */
     border-radius: 25px;
-    /* 
-    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.2); */
-    /* padding: 0.7vh; */
     cursor: pointer;
 }
 
@@ -18,14 +17,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s;
+    font-size: 80%;
 }
 
 .switch {
     position: relative;
-    position: relative;
-    width: var(--topBarHeight);
-    height: var(--topBarHeight);
+    width: calc(var(--topBarHeight) / 1.5);
+    height: calc(var(--topBarHeight) / 1.5);
     border-radius: 50%;
-    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.5);
-    transition: 0.6s;
+    /* box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.5); */
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
 }

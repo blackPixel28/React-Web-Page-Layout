@@ -22,7 +22,15 @@ const ThemeSwitch = ({ setActiveTheme, themes }) => {
 
     return (
         <div className="themeSwitch">
-            <div className='switch' onClick={() => handleSwitchTheme(theme)} style={theme === true ? { transform: 'rotate(180deg)' } : { transform: 'rotate(0deg)' }}>
+            <div
+                className='switch'
+                onClick={
+                    () => handleSwitchTheme(theme)}
+                style={theme === true ? {
+                    transform: 'translateX(50%)'
+                } : {
+                    transform: 'translateX(-50%)'
+                }}>
                 <FontAwesomeIcon icon="fa-solid fa-circle-half-stroke" color={switchColor} />
             </div>
         </div>
