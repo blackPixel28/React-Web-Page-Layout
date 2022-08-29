@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from "react";
 
 const GetTime = ({ timeTitle }) => {
@@ -19,7 +20,8 @@ const GetTime = ({ timeTitle }) => {
 
     return (
         <span className='topBar-time'>
-            {`${timeTitle}${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`}
+            <FontAwesomeIcon icon="fa-solid fa-clock" color='rgba(255, 255, 255, 0.3)' />
+            {` ${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`}
         </span>
     )
 }

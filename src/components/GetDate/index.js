@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const GetDate = ({ dateTitle }) => {
     const handleDate = () => {
         const d = new Date();
@@ -7,7 +8,8 @@ const GetDate = ({ dateTitle }) => {
 
     return (
         <span className='topBar-date'>
-            {`${dateTitle}${handleDate()}`}
+            <FontAwesomeIcon icon="fa-solid fa-calendar-day" color='rgba(255, 255, 255, 0.3)' />
+            {` ${handleDate()}`}
         </span>
     )
 }
