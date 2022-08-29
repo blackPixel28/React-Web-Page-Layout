@@ -95,7 +95,8 @@ nav {
     --navIconSize: var(--navStickIconSize);
 }
 
-/* .link-wrap:hover {
+
+.link-wrap:hover {
     animation: zoomNav 0.2s 0.1s linear forwards;
 }
 
@@ -115,4 +116,4 @@ nav {
     100% {
         transform: scale(1);
     }
-} */
+}
