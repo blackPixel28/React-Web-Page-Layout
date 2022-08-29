@@ -7,10 +7,10 @@ const GetDate = ({ dateTitle }) => {
     }
 
     return (
-        <span className='topBar-date'>
+        <div className='topBar-date'>
             <FontAwesomeIcon icon="fa-solid fa-calendar-day" color='rgba(255, 255, 255, 0.3)' />
             {` ${handleDate()}`}
-        </span>
+        </div>
     )
 }
 

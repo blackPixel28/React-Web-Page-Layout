@@ -19,10 +19,10 @@ const GetTime = ({ timeTitle }) => {
     }
 
     return (
-        <span className='topBar-time'>
+        <div className='topBar-time'>
             <FontAwesomeIcon icon="fa-solid fa-clock" color='rgba(255, 255, 255, 0.3)' />
             {` ${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`}
-        </span>
+        </div>
     )
 }
 
