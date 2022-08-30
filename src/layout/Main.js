@@ -2,7 +2,8 @@ import '../css/Main.css'
 import { Routes, Route } from "react-router-dom";
 import { StartPage, NoPage, NavLink, Contact, loremLong, loremMid, loremDefault } from '../pages'
 
-export default function Main({ data }) {
+export default function Main({ noPage, links }) {
+
     return (
         <main className="app-main">
             <Routes>
@@ -44,8 +45,8 @@ export default function Main({ data }) {
                 <Route
                     path="*"
                     element={<NoPage
-                        title={data.NoPage.title}
-                        text={data.NoPage.text}
+                        title={noPage.title}
+                        text={noPage.text}
                     />}
                 />
             </Routes>

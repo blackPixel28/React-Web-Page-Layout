@@ -49,7 +49,7 @@ export default function App() {
       <div className="app">
         <Header headerDB={db.Header} topBarDB={db.TopBar} setActiveTheme={setActiveTheme} themes={themes} />
         < Nav navData={db.Links.nav} />
-        <Main data={db} />
+        <Main noPage={db.NoPage} links={db.Links} />
         <Footer text={db.Footer.text} copyTitle={db.Footer.copyTitle} publicYear={db.Footer.publicYear} />
       </div >
     </ThemeContext.Provider>

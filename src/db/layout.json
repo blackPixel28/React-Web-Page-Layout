@@ -25,11 +25,6 @@
                 "text": "kontakt",
                 "link": "/contact",
                 "icon": "fa-solid fa-envelope"
-            },
-            {
-                "text": "404",
-                "link": "/error404",
-                "icon": "fa-solid fa-file"
             }
         ]
     },
