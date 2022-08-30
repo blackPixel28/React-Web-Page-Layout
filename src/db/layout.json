@@ -32,9 +32,9 @@
         }
     ],
     "TopBar": {
-        "text": "Witaj...",
-        "dateTxt": "data:",
-        "timeTxt": "czas:"
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        "dateTitle": "Date:",
+        "timeTitle": "Time:"
     },
     "Header": {
         "text": "Header"

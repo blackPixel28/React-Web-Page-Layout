@@ -19,7 +19,6 @@ export default function Slideshow() {
     }
 
     const handleTouchStart = (e) => {
-        console.log(`start: ${e.touches[0].clientX}`)
         return setTouchStart(e.touches[0].clientX);
     }
     const handleTouchMove = (index, e) => {
@@ -34,7 +33,6 @@ export default function Slideshow() {
         else if (direction === 'left') {
             handleRight(touchDelay)
         }
-        console.log(direction)
     }
 
 
@@ -64,7 +62,6 @@ export default function Slideshow() {
     const handleArrow = (direction) => {
         if (direction === 'left') handleLeft(0);
         else if (direction === 'right') handleRight(0);
-        return console.log(direction)
     }
 
 

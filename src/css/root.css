@@ -68,17 +68,22 @@
 
     /* Footer */
     --footerHeight: 4vh;
+    --footerFontColor: #666;
+    --footerYearFontColor: #999;
 
     /* ArrowUp */
     --arrowUpSize: 7vh;
     --arrowUpColor: rgb(220, 20, 60);
     --arrowBackgroudColor: white;
     --arrowUpOpacity: 70%;
+
+    /* NoPage */
+    --noPageBackground: #fff;
 }
 
 
 
-@media (orientation:landscape) {
+@media (orientation:landscape) and (max-width: 1280px) {
     :root {
         /* Body  */
         --appFontSize: 4vh;

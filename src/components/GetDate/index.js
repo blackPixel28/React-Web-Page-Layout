@@ -1,4 +1,6 @@
-const GetDate = ({ dataTxt }) => {
+import './css/index.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+const GetDate = ({ dateTitle }) => {
     const handleDate = () => {
         const d = new Date();
         const date = d.toISOString().slice(0, 10).split('-');
@@ -6,9 +8,10 @@ const GetDate = ({ dataTxt }) => {
     }
 
     return (
-        <span className='topBar-date'>
-            {`${dataTxt}${handleDate()}`}
-        </span>
+        <div className='topBar-date'>
+            <FontAwesomeIcon icon="fa-solid fa-calendar-day" color='rgba(255, 255, 255, 0.3)' />
+            {` ${handleDate()}`}
+        </div>
     )
 }
 

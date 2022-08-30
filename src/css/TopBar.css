@@ -2,8 +2,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 5vh;
-    padding: 0.2vh 0.8vh;
+    gap: 10px;
     background-color: var(--topBarBackgroundColor);
     color: var(--topBarColor);
     min-width: 100%;
@@ -15,18 +14,32 @@
     z-index: 1;
 }
 
+.topBar-text,
+.topBar-date-time {
+    padding: 4px 10px;
+    /* background-color: blue; */
+}
 
 .topBar-text {
     flex-grow: 1;
-    text-align: center;
+    flex-basis: 60%;
+    text-align: left;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .topBar-date-time {
+    flex-basis: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-end;
     font-weight: 400;
 }
+
+/* 
+@media (min-width:1280px) {
+    .topBar-date-time {
+        flex-basis: 15%;
+    }
+} */

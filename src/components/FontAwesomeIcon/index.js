@@ -1,3 +1,3 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHome, faFile, faEnvelope, faTriangleExclamation, faCircleArrowUp, faCircleArrowDown, faCircleArrowLeft, faCircleArrowRight, faCopyright } from '@fortawesome/free-solid-svg-icons';
-library.add(faHome, faEnvelope, faFile, faTriangleExclamation, faCircleArrowUp, faCircleArrowDown, faCircleArrowLeft, faCircleArrowRight, faCopyright)
+import { faHome, faFile, faEnvelope, faTriangleExclamation, faCircleArrowUp, faCircleArrowDown, faCircleArrowLeft, faCircleArrowRight, faCopyright, faSun, faMoon, faCalendarDay, faClock } from '@fortawesome/free-solid-svg-icons';
+library.add(faHome, faEnvelope, faFile, faTriangleExclamation, faCircleArrowUp, faCircleArrowDown, faCircleArrowLeft, faCircleArrowRight, faCopyright, faSun, faMoon, faCalendarDay, faClock)

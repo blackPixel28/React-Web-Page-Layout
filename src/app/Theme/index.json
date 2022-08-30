@@ -1,0 +1,20 @@
+{
+    "light": {
+        "appFontColor": "#222",
+        "bodyBackgroundColor": "#f0f0f0",
+        "appPageBackgroundColor": "#fff",
+        "arrowBackgroudColor": "#fff",
+        "footerFontColor": "#666",
+        "footerYearFontColor": "#999",
+        "noPageBackground": "#fff"
+    },
+    "dark": {
+        "appFontColor": "#eee",
+        "bodyBackgroundColor": "#000",
+        "appPageBackgroundColor": "#222",
+        "arrowBackgroudColor": "#000",
+        "footerFontColor": "#777",
+        "footerYearFontColor": "#444",
+        "noPageBackground": "#333"
+    }
+}
