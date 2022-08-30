@@ -23,11 +23,8 @@ export default function App() {
 
     handleChangeTheme()
     handleStick(stick);
-    // handleReadCooke() === true ? setActiveTheme(themes.dark) : setActiveTheme(themes.light)
 
-    return () => {
-      // document.cookie = `themeColor = dark`;
-    }
+    return () => { }
   })
 
   const handleChangeTheme = () => {
