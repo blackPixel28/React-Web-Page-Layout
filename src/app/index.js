@@ -3,7 +3,7 @@ import '../components/FontAwesomeIcon';
 import db from '../db/layout.json';
 import './css/App.css'
 import { Header, Main, Footer, Nav } from '../layout';
-import setCssRootValue from '../components/setCssRootValue';
+import SetCssRootValue from '../components/SetCssRootValue';
 import themes from './Theme';
 
 const ThemeContext = createContext(themes.light);
@@ -35,7 +35,7 @@ export default function App() {
     const values = Object.values(activeTheme);
 
     keys.map((key, index) => (
-      setCssRootValue(`--${key}`, values[index])
+      SetCssRootValue(`--${key}`, values[index])
     ))
   }
 
@@ -48,7 +48,7 @@ export default function App() {
     <ThemeContext.Provider value={activeTheme}>
       <div className="app">
         <Header headerDB={db.Header} topBarDB={db.TopBar} setActiveTheme={setActiveTheme} themes={themes} />
-        < Nav navData={db.Nav} />
+        < Nav navData={db.Links.nav} />
         <Main data={db} />
         <Footer text={db.Footer.text} copyTitle={db.Footer.copyTitle} publicYear={db.Footer.publicYear} />
       </div >

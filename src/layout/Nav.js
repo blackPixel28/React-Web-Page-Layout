@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
+import SetCssRootValue from '../components/SetCssRootValue';
 import ArrowUp from '../components/ArrowUp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 import '../css/Nav.css';
 
 export default function Nav({ navData }) {
+    useEffect(() => {
+        return () => SetCssRootValue('--navButtonNumber', navData.length)
+    })
+
     return (
         <nav className="app-nav">
             <NavContener navData={navData} />
