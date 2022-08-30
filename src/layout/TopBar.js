@@ -25,8 +25,10 @@ const TopBarText = ({ text }) => {
 const TopBarDataTime = ({ dateTitle, timeTitle }) => {
     return (
         <div className='topBar-date-time'>
-            <GetDate dateTitle={dateTitle} />
-            <GetTime timeTitle={timeTitle} />
+            <div className='date-time-wrap'>
+                <GetDate dateTitle={dateTitle} />
+                <GetTime timeTitle={timeTitle} />
+            </div>
         </div>
     )
 }

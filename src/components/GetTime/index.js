@@ -1,3 +1,4 @@
+import './css/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from "react";
 
