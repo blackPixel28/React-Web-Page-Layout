@@ -8,6 +8,7 @@
     min-width: calc(var(--topBarHeight) * 1.4);
     /* min-height: calc(var(--topBarHeight) / 1.2); */
     border-radius: 25px;
+    /* background-color: red; */
 }
 
 .themeSwitch svg {
