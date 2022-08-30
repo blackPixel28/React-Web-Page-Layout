@@ -5,10 +5,9 @@
     gap: 10px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.15);
-    min-width: calc(var(--topBarHeight) * 1.4);
+    min-width: calc(var(--topBarHeight) * 1.6);
     /* min-height: calc(var(--topBarHeight) / 1.2); */
     border-radius: 25px;
-    /* background-color: red; */
 }
 
 .themeSwitch svg {
@@ -22,8 +21,8 @@
 
 .switch {
     position: relative;
-    width: calc(var(--topBarHeight) / 1.5);
-    height: calc(var(--topBarHeight) / 1.5);
+    width: calc(var(--topBarHeight) / 1.4);
+    height: calc(var(--topBarHeight) / 1.4);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
