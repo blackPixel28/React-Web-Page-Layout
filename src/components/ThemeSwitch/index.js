@@ -1,4 +1,4 @@
-import setCookie from '../setCookie';
+import setCookie from '../SetCookie';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useEffect } from 'react';
 import './css/index.css'

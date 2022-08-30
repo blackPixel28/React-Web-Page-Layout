@@ -2,7 +2,7 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    min-height: var(--navHeight);
+    min-height: var(--navStickHeight);
     z-index: 100;
     background-color: var(--navBackgroundColor);
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
@@ -14,12 +14,10 @@ nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    /* transition: 5s; */
 }
 
 .nav-li {
-    flex-basis: calc(100% / var(--navButtonNumber));
-    /* transition: 5s; */
+    flex-basis: calc(100% / var(--navButtonNumber))
 }
 
 .nav-link {
@@ -27,8 +25,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 1.2vh; */
-    /* padding: 1vh 2vw; */
     text-align: center;
     background-color: var(--navButtonBackgroundColor);
     color: var(--navTextColor);
@@ -36,7 +32,8 @@ nav {
     font-size: var(--navFontSize);
     text-transform: uppercase;
     border-radius: var(--navButtonRadius);
-    min-height: var(--navHeight);
+    min-height: var(--navStickHeight);
+    height: var(--navHeight);
     transition: var(--navTransition);
 }
 

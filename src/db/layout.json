@@ -1,36 +1,33 @@
 {
-    "Nav": [
-        {
-            "text": "start",
-            "link": "/",
-            "icon": "fa-solid fa-house"
-        },
-        {
-            "text": "link1",
-            "link": "/link1",
-            "icon": "fa-solid fa-file"
-        },
-        {
-            "text": "link2",
-            "link": "/link2",
-            "icon": "fa-solid fa-file"
-        },
-        {
-            "text": "link3",
-            "link": "/link3",
-            "icon": "fa-solid fa-file"
-        },
-        {
-            "text": "404",
-            "link": "/error404",
-            "icon": "fa-solid fa-file"
-        },
-        {
-            "text": "kontakt",
-            "link": "/contact",
-            "icon": "fa-solid fa-envelope"
-        }
-    ],
+    "Links": {
+        "nav": [
+            {
+                "text": "start",
+                "link": "/",
+                "icon": "fa-solid fa-house"
+            },
+            {
+                "text": "link1",
+                "link": "/link1",
+                "icon": "fa-solid fa-file"
+            },
+            {
+                "text": "link2",
+                "link": "/link2",
+                "icon": "fa-solid fa-file"
+            },
+            {
+                "text": "link3",
+                "link": "/link3",
+                "icon": "fa-solid fa-file"
+            },
+            {
+                "text": "kontakt",
+                "link": "/contact",
+                "icon": "fa-solid fa-envelope"
+            }
+        ]
+    },
     "TopBar": {
         "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
         "dateTitle": "Date:",

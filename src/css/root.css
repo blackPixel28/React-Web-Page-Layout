@@ -41,8 +41,8 @@
     --slidershowArrowBackgroundColor: rgba(0, 0, 0, 0.75);
 
     /* Nav */
-    --navButtonNumber: 6;
-    --navHeight: 5vh;
+    --navButtonNumber: 1;
+    --navHeight: 7.5vh;
     --navBackgroundColor: black;
     --navTextColor: white;
     --navFontSize: 1.65vh;
@@ -59,7 +59,7 @@
     --navIconColor: white;
 
     /* Nav Sitck */
-    --navStickHeight: 2vh !important;
+    --navStickHeight: 6vh !important;
     --navSickFontSize: 1.45vh !important;
     --navStickIconSize: 1.9vh !important;
 
@@ -121,5 +121,42 @@
         /* ArrowUp */
         --arrowUpSize: 14vh;
 
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        /* App */
+        --appFontSize: 1.5vh;
+
+        /* Top-Bar */
+        --topBarFontSize: 1.2vh;
+
+        /* Slideshow Arrow */
+        --arrowLeftSlideSize: 3vh;
+        --arrowButtonHeight: 6vh;
+        --dotSlideshowHeight: 2.5vh;
+
+        /* Slideshow Dots */
+        --slideshowDotSize: 1.2vh;
+
+        /* Nav */
+        --navHeight: 6vh;
+        --navFontSize: 1.3vh;
+        --navFontSizeSticky: 1vh;
+
+        /* Nav Icon */
+        --navIconSize: 1.6vh;
+
+        /* Nav Sitck */
+        --navStickHeight: 5vh !important;
+        --navSickFontSize: 1.1vh !important;
+        --navStickIconSize: 1.3vh !important;
+
+        /* Footer */
+        --footerHeight: 3vh;
+
+        /* ArrowUp */
+        --arrowUpSize: 5vh;
     }
 }
