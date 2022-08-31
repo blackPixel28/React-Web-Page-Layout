@@ -2,7 +2,7 @@ import '../css/Main.css'
 import { Routes, Route } from "react-router-dom";
 import { StartPage, NoPage, NavLink, Contact, loremLong, loremMid, loremDefault } from '../pages'
 
-export default function Main({ noPage, links }) {
+export default function Main({ noPage }) {
 
     return (
         <main className="app-main">
@@ -14,6 +14,10 @@ export default function Main({ noPage, links }) {
                         text={loremDefault}
                     />}
                 />
+                <Route path="/*" element={<StartPage
+                    title='Home Page'
+                    text={loremDefault}
+                />} />
                 <Route
                     path="link1"
                     element={<NavLink
@@ -43,7 +47,7 @@ export default function Main({ noPage, links }) {
                     />}
                 />
                 <Route
-                    path="*"
+                    exact path="/*"
                     element={<NoPage
                         title={noPage.title}
                         text={noPage.text}
