@@ -1,2 +1,0 @@
-const loremDefault = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta velit dolore illum. Est cum quae praesentium veniam. Nulla eos, incidunt, officiis sapiente at aspernatur maxime asperiores, voluptatibus sit impedit voluptate!'
-export default loremDefault;
